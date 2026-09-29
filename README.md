@@ -24,6 +24,9 @@ Enquiries from the contact form go to the `CONTACT_EMAIL` address in `script.js`
 2. Update the post's `<title>`, meta description, date, heading and content.
 3. Add a card for the post at the top of the list in `blog/index.html`.
 4. Put any new images in `images/`, resized (about 1600px wide, WebP).
+5. Search and sharing: update the post's canonical link, `og:` tags and JSON-LD
+   block in its `<head>`, add a 1200×630 share image in `images/share/`, and add
+   the post to `sitemap.xml`, `llms.txt` and the blog JSON-LD in `blog/index.html`.
 
 ## Running locally
 
