@@ -1,5 +1,5 @@
 // Replace with the address enquiries should go to.
-const CONTACT_EMAIL = 'hello@example.com';
+const CONTACT_EMAIL = 'meadowbms@gmail.com';
 
 document.getElementById('year').textContent = new Date().getFullYear();
 

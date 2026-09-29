@@ -18,7 +18,7 @@ python3 -m http.server 8000
 
 ## Before going live
 
-- Set `CONTACT_EMAIL` in `script.js` to the address enquiries should go to. The form opens the visitor's email client with the enquiry pre-filled.
+- Enquiries go to the `CONTACT_EMAIL` address in `script.js`. The form opens the visitor's email client with the enquiry pre-filled.
 - Update the studio name ("MBMS Podcast Studio") in `index.html` if needed.
 
 The site has no build step, so it can be hosted as-is on GitHub Pages, Netlify or any static host.
