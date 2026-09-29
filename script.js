@@ -39,3 +39,12 @@ document.querySelectorAll('.video-frame[data-youtube-id]').forEach((el) => {
   iframe.allowFullscreen = true;
   el.replaceChildren(iframe);
 });
+
+// Respect reduced motion: stop looping videos and give the viewer controls.
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.querySelectorAll('video[autoplay]').forEach((v) => {
+    v.removeAttribute('autoplay');
+    v.pause();
+    v.controls = true;
+  });
+}
