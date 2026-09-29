@@ -106,6 +106,8 @@ a { color: inherit; }
   background: var(--accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8.5l2.5 2.5L12 5.5' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/80% no-repeat;
 }
 
+.venues { font-weight: 600; }
+
 /* Price card */
 .price-card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 36px; text-align: center; box-shadow: 0 20px 40px rgba(22, 21, 26, .06); }
 .price-label { font-weight: 600; color: var(--muted); margin-bottom: .2em; }
