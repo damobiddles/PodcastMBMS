@@ -7,6 +7,7 @@ A static, single-page website for podcast recording, production and marketing se
 - `index.html` – page content (services, pricing, case study, packages, contact)
 - `styles.css` – styling and responsive layout
 - `script.js` – mobile menu, contact form and YouTube embed
+- `blog/` – the blog: `blog/index.html` lists the posts, and each post has its own folder
 
 ## Publishing
 
@@ -15,6 +16,14 @@ Changes are made on a separate branch and opened as a pull request; merging the
 pull request into `main` puts them live. There is no build step.
 
 Enquiries from the contact form go to the `CONTACT_EMAIL` address in `script.js`.
+
+## Adding a blog post
+
+1. Copy an existing post folder in `blog/` and rename it with a short, readable slug
+   (for example `blog/preparing-for-your-first-recording/`).
+2. Update the post's `<title>`, meta description, date, heading and content.
+3. Add a card for the post at the top of the list in `blog/index.html`.
+4. Put any new images in `images/`, resized (about 1600px wide, WebP).
 
 ## Running locally
 

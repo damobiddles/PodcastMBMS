@@ -1,7 +1,8 @@
 // Replace with the address enquiries should go to.
 const CONTACT_EMAIL = 'meadowbms@gmail.com';
 
-document.getElementById('year').textContent = new Date().getFullYear();
+const year = document.getElementById('year');
+if (year) year.textContent = new Date().getFullYear();
 
 const toggle = document.querySelector('.nav-toggle');
 const links = document.getElementById('nav-links');
@@ -19,7 +20,7 @@ links.querySelectorAll('a').forEach((a) =>
 );
 
 // Opens the visitor's email client with the enquiry pre-filled.
-document.getElementById('contact-form').addEventListener('submit', (e) => {
+document.getElementById('contact-form')?.addEventListener('submit', (e) => {
   e.preventDefault();
   const data = new FormData(e.target);
   const subject = `Podcast enquiry: ${data.get('interest')}`;
