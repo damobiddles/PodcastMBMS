@@ -45,6 +45,7 @@ a { color: inherit; }
 .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(255, 90, 54, .3); }
 .btn-ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
 .btn-ghost:hover { box-shadow: 0 8px 20px rgba(0, 0, 0, .1); }
+.section-dark .btn-ghost { color: #fff; border-color: rgba(255, 255, 255, .7); }
 .btn-small { padding: .5em 1.1em; }
 .btn-block { display: block; width: 100%; text-align: center; }
 .text-link { font-weight: 600; text-decoration: none; color: var(--accent); }
