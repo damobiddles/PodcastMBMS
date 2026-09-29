@@ -41,6 +41,17 @@ document.querySelectorAll('.video-frame[data-youtube-id]').forEach((el) => {
   el.replaceChildren(iframe);
 });
 
+// Play marked videos only while they're on screen, to save data and battery.
+const inViewVideos = document.querySelectorAll('video[data-play-in-view]');
+if (inViewVideos.length && 'IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => (e.isIntersecting ? e.target.play().catch(() => {}) : e.target.pause()));
+  }, { threshold: 0.5 });
+  inViewVideos.forEach((v) => io.observe(v));
+} else {
+  inViewVideos.forEach((v) => { v.controls = true; });
+}
+
 // Respect reduced motion: stop looping videos and give the viewer controls.
 if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   document.querySelectorAll('video[autoplay]').forEach((v) => {
