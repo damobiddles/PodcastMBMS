@@ -168,6 +168,11 @@ a { color: inherit; }
 .case-body > p { color: var(--muted); font-size: 1.05rem; }
 .video-frame { position: relative; aspect-ratio: 16 / 9; max-width: 100%; border-radius: var(--radius); overflow: hidden; background: var(--dark); display: grid; place-items: center; }
 .video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.show { display: flex; align-items: center; gap: 16px; margin-bottom: 1.2em; }
+.show img { width: 112px; height: 112px; flex: none; border-radius: 12px; box-shadow: 0 10px 24px rgba(22, 21, 26, .18); }
+.show p { margin: 0; }
+.show-name { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.3rem; }
+.show-by { color: var(--muted); font-size: .9rem; }
 .case-body h3 { margin-top: 1.4em; }
 .case-meta { color: var(--muted); }
 .platforms-light span { border-color: var(--line); color: var(--ink); background: #fff; }
