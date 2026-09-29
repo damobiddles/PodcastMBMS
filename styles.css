@@ -56,10 +56,10 @@ a { color: inherit; }
   border-bottom: 1px solid var(--line);
 }
 .nav { display: flex; align-items: center; justify-content: space-between; height: 68px; }
-.brand { display: flex; align-items: center; gap: .6em; font-family: 'Space Grotesk', sans-serif; font-weight: 700; text-decoration: none; font-size: 1.1rem; }
+.brand { display: flex; align-items: center; gap: .6em; font-family: 'Space Grotesk', sans-serif; font-weight: 700; text-decoration: none; font-size: 1.1rem; white-space: nowrap; }
 .brand-mark { width: 22px; height: 22px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 5px rgba(255, 90, 54, .2); }
 .nav-links { display: flex; align-items: center; gap: 1.6em; }
-.nav-links a { text-decoration: none; font-weight: 500; font-size: .95rem; }
+.nav-links a { text-decoration: none; font-weight: 500; font-size: .95rem; white-space: nowrap; }
 .nav-links a:not(.btn):hover { color: var(--accent); }
 .nav-toggle { display: none; background: none; border: 0; padding: 8px; cursor: pointer; }
 .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--ink); margin: 5px 0; }
@@ -107,6 +107,26 @@ a { color: inherit; }
 }
 
 .venues { font-weight: 600; }
+
+.venues a { color: var(--accent); }
+
+/* Hale House gallery */
+.gallery { display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: auto auto; gap: 20px; }
+.gallery figure { margin: 0; min-width: 0; }
+.gallery-main { grid-row: span 2; }
+.gallery img { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius); }
+.gallery-main img { aspect-ratio: auto; height: calc(100% - 32px); min-height: 0; }
+.gallery figcaption { margin-top: 8px; font-size: .85rem; color: var(--muted); }
+
+/* Mobile studio and remote recording */
+.kit-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; align-items: start; }
+.kit-card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; min-width: 0; }
+.kit-media { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: center 35%; background: var(--dark); }
+.kit-body { padding: 28px; }
+.kit-body > p { color: var(--muted); }
+.kit-product { margin: 1.2em 0 0; padding-top: 1.2em; border-top: 1px solid var(--line); display: flex; align-items: center; gap: 16px; }
+.kit-product img { width: 160px; max-width: 45%; height: auto; }
+.kit-product figcaption { font-weight: 600; font-size: .9rem; white-space: nowrap; }
 
 /* Price card */
 .price-card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 36px; text-align: center; box-shadow: 0 20px 40px rgba(22, 21, 26, .06); }
@@ -204,7 +224,7 @@ a { color: inherit; }
 .footer-inner p { margin: 0; }
 
 /* Responsive */
-@media (max-width: 860px) {
+@media (max-width: 1080px) {
   .nav-toggle { display: block; }
   .nav-links {
     display: none; position: absolute; top: 68px; left: 0; right: 0; flex-direction: column; align-items: stretch;
@@ -213,6 +233,9 @@ a { color: inherit; }
   .nav-links.open { display: flex; }
   .nav-links a { padding: 12px 0; }
   .nav-links .btn { margin-top: 8px; text-align: center; }
+}
+
+@media (max-width: 860px) {
   .clip-row { grid-template-columns: repeat(2, 1fr); gap: 14px; }
   .clip-screen { padding: 40px 8px 40px; gap: 10px; border-width: 4px; }
   .clip-platform { top: 10px; left: 10px; font-size: .6rem; }
@@ -221,6 +244,9 @@ a { color: inherit; }
   .clip-caption { font-size: .75rem; }
   .clip-handle { bottom: 10px; left: 10px; font-size: .65rem; }
   .clip-square .clip-speakers { display: none; }
+  .gallery, .kit-grid { grid-template-columns: 1fr; }
+  .gallery-main { grid-row: auto; }
+  .gallery-main img { height: auto; aspect-ratio: 4 / 3; }
   .levels-grid, .split, .package-grid, .contact, .case-study { grid-template-columns: 1fr; gap: 32px; }
   .section { padding: 64px 0; }
   .hero { padding: 64px 0 48px; }
