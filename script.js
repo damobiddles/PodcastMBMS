@@ -26,3 +26,16 @@ document.getElementById('contact-form').addEventListener('submit', (e) => {
   const body = `Name: ${data.get('name')}\nEmail: ${data.get('email')}\nInterested in: ${data.get('interest')}\n\n${data.get('message')}`;
   window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
+
+// Embeds YouTube videos from their data-youtube-id.
+document.querySelectorAll('.video-frame[data-youtube-id]').forEach((el) => {
+  const id = el.dataset.youtubeId.trim();
+  if (!id) return;
+  const iframe = document.createElement('iframe');
+  iframe.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}`;
+  iframe.title = el.dataset.title || 'YouTube video';
+  iframe.loading = 'lazy';
+  iframe.allow = 'accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+  iframe.allowFullscreen = true;
+  el.replaceChildren(iframe);
+});
