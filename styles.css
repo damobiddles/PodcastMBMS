@@ -301,6 +301,13 @@ a { color: inherit; }
 .choose-card p { margin: 0; color: var(--muted); }
 .choose-card-accent { border: 2px solid var(--accent); }
 
+.pull-quote { margin: 1em 0; padding: 4px 0 4px 20px; border-left: 4px solid var(--accent); font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.35rem; line-height: 1.35; }
+.pull-quote-muted { border-left-color: var(--line); color: var(--muted); font-weight: 500; }
+.question-list { list-style: none; padding: 0; margin: 0 0 1.2em; display: grid; gap: .4em; }
+.question-list li { padding-left: 1.4em; position: relative; font-weight: 600; }
+.question-list li::before { content: '?'; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+.post-cta .btn { white-space: normal; text-align: center; }
+
 /* Footer */
 .site-footer { background: var(--dark); color: #a9a6b2; padding: 56px 0 28px; font-size: .9rem; }
 .site-footer a { color: #fff; text-decoration: none; }
