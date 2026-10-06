@@ -2,7 +2,7 @@
 
 > London podcast production studio. We record, edit, publish and promote podcasts for businesses, and help them turn each episode into clips, posts and articles for their wider marketing.
 
-MBMS Podcast Studio is run by Damien. Damien is a commercially focused marketing leader with extensive experience across B2B SaaS, cybersecurity, insurance technology, healthcare, retail and the video games industry. He combines strategic thinking with hands-on delivery, creating clear propositions, integrated campaigns and compelling content that turn complex ideas into measurable growth. Having worked both agency-side and in-house, he brings together brand, demand generation, product marketing and creative storytelling to help ambitious businesses connect with their audiences and grow. We record at venues in London including Hale House, bring a RØDE mobile studio to clients' offices and events, and record remote guests with Riverside.
+MBMS Podcast Studio was founded by Damien and has a marketing background, with experience across B2B SaaS, cybersecurity, insurance technology, healthcare, retail and the video games industry, both agency-side and in-house. As well as recording and editing, we help clients shape the idea, plan guests and turn each conversation into content that supports their business goals. We record at venues in London including Hale House, bring a RØDE mobile studio to clients' offices and events, and record remote guests with Riverside.
 
 ## Services and guide prices
 
@@ -25,7 +25,7 @@ Prices are guidelines, not fixed rates.
 
 ## Pages
 
-- [Home](https://mbmspodcaststudio.com/): overview, Hale House, case study, The Pod Pivot, about Damien, FAQ and contact
+- [Home](https://mbmspodcaststudio.com/): overview, Hale House, case study, The Pod Pivot, about the studio, FAQ and contact
 - [Services and prices](https://mbmspodcaststudio.com/services/): recording, Hale House, mobile and remote recording, post-production, marketing, YouTube clips and packages
 - [Blog](https://mbmspodcaststudio.com/blog/): behind the scenes and practical podcasting advice
 - [Your YouTube podcast is full of clips you're not using](https://mbmspodcaststudio.com/blog/your-youtube-podcast-is-full-of-clips/)
