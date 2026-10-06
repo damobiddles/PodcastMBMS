@@ -1,3 +1,12 @@
+// Sections that moved from the home page to the Services page: keep old links working.
+(function () {
+  const moved = ['recording', 'hale-house', 'mobile-remote', 'post-production', 'marketing', 'youtube-clips', 'packages'];
+  const id = location.hash.slice(1);
+  if (id && moved.includes(id) && !document.getElementById(id) && document.querySelector('.hero')) {
+    location.replace('services/#' + id);
+  }
+})();
+
 // Replace with the address enquiries should go to.
 const CONTACT_EMAIL = 'meadowbms@gmail.com';
 
