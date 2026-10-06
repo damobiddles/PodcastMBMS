@@ -16,7 +16,7 @@ The site is hosted on Netlify, which publishes the `main` branch automatically.
 Changes are made on a separate branch and opened as a pull request; merging the
 pull request into `main` puts them live. There is no build step.
 
-Enquiries from the contact form go to the `CONTACT_EMAIL` address in `script.js`.
+Enquiries from the contact form are collected by Netlify Forms (form name `contact`). Set up email notifications in Netlify under Project configuration → Notifications → Emails and webhooks → Form submission notifications. If sending fails, the form asks visitors to email the `CONTACT_EMAIL` address in `script.js`.
 
 ## Adding a blog post
 

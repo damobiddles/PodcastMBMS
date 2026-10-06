@@ -29,12 +29,33 @@ links.querySelectorAll('a').forEach((a) =>
 );
 
 // Opens the visitor's email client with the enquiry pre-filled.
-document.getElementById('contact-form')?.addEventListener('submit', (e) => {
+// Sends the contact form to Netlify Forms without leaving the page.
+// Without JavaScript, the form still posts normally and lands on /thank-you/.
+const contactForm = document.getElementById('contact-form');
+contactForm?.addEventListener('submit', async (e) => {
   e.preventDefault();
-  const data = new FormData(e.target);
-  const subject = `Podcast enquiry: ${data.get('interest')}`;
-  const body = `Name: ${data.get('name')}\nEmail: ${data.get('email')}\nInterested in: ${data.get('interest')}\n\n${data.get('message')}`;
-  window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const status = document.getElementById('form-status');
+  const button = contactForm.querySelector('button[type="submit"]');
+  button.disabled = true;
+  button.textContent = 'Sending…';
+  try {
+    const res = await fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(new FormData(contactForm)).toString(),
+    });
+    if (!res.ok) throw new Error(res.status);
+    contactForm.reset();
+    status.className = 'form-status form-status-ok';
+    status.textContent = "Thanks, your enquiry has been sent. We'll be in touch soon.";
+    button.textContent = 'Sent';
+  } catch {
+    status.className = 'form-status form-status-error';
+    status.innerHTML = `Sorry, that didn't send. Please email us at <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`;
+    button.disabled = false;
+    button.textContent = 'Send enquiry';
+  }
+  status.hidden = false;
 });
 
 // Embeds YouTube videos from their data-youtube-id.

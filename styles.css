@@ -279,6 +279,11 @@ a { color: inherit; }
   font: inherit; font-weight: 400; padding: .75em .9em; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); color: var(--ink);
 }
 .contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
+.hp-field { position: absolute; left: -9999px; }
+.form-status { margin: 0; padding: 12px 16px; border-radius: 10px; font-weight: 500; }
+.form-status-ok { background: #e7f5ec; color: #17603a; }
+.form-status-error { background: #fdecea; color: #9b2c1a; }
+.form-status a { color: inherit; font-weight: 600; }
 
 /* Blog */
 .page-intro h1 { font-size: clamp(2rem, 4.5vw, 3rem); }
