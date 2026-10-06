@@ -7,6 +7,7 @@ A static, single-page website for podcast recording, production and marketing se
 - `index.html` – page content (services, pricing, case study, packages, contact)
 - `styles.css` – styling and responsive layout
 - `script.js` – mobile menu, contact form and YouTube embed
+- `services/` – services and prices (recording, Hale House, mobile/remote, post-production, marketing, YouTube clips, packages)
 - `blog/` – the blog: `blog/index.html` lists the posts, and each post has its own folder
 
 ## Publishing

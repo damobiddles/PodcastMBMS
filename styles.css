@@ -87,6 +87,10 @@ a { color: inherit; }
 /* Levels */
 .levels { padding-bottom: 40px; }
 .levels-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.levels-more { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 32px; margin-top: 20px; color: var(--muted); font-size: .95rem; }
+.levels-more p { margin: 0; }
+.levels-more a { color: var(--accent); font-weight: 600; text-decoration: none; }
+.levels-more a:hover { text-decoration: underline; }
 .level-card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 32px; }
 .level-card-accent { background: var(--dark); color: #fff; border-color: var(--dark); }
 .level-card-accent p { color: #c9c6d1; }
@@ -198,6 +202,18 @@ a { color: inherit; }
 .case-meta { color: var(--muted); }
 .platforms-light span { border-color: var(--line); color: var(--ink); background: #fff; }
 .video-empty { color: #a9a6b2; margin: 0; }
+
+/* Services page and home teasers */
+.level-price { font-size: .9rem; font-weight: 600; opacity: .85; }
+.studio-teaser img { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius); }
+.studio-teaser > div { min-width: 0; }
+.services-intro { padding-bottom: 24px; }
+.services-intro h1 { font-size: clamp(2rem, 4.5vw, 3rem); }
+.jump-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.jump-links a { font-size: .88rem; font-weight: 600; text-decoration: none; padding: .45em .95em; border-radius: 999px; background: #fff; border: 1px solid var(--line); color: var(--ink); }
+.jump-links a:hover { border-color: var(--accent); color: var(--accent); }
+.services-cta { text-align: center; }
+.services-cta p { max-width: 560px; margin: 0 auto 1.6em; }
 
 /* YouTube clips service */
 .yt-split { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin: 8px 0 40px; }
