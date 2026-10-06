@@ -48,7 +48,7 @@ a { color: inherit; }
 .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(255, 90, 54, .3); }
 .btn-ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
 .btn-ghost:hover { box-shadow: 0 8px 20px rgba(0, 0, 0, .1); }
-.section-dark .btn-ghost { color: #fff; border-color: rgba(255, 255, 255, .7); }
+.section-dark .btn-ghost, .post-cta .btn-ghost { color: #fff; border-color: rgba(255, 255, 255, .7); }
 .btn-small { padding: .5em 1.1em; }
 .btn-block { display: block; width: 100%; text-align: center; }
 .text-link { font-weight: 600; text-decoration: none; color: var(--accent-text); }
@@ -226,6 +226,7 @@ a { color: inherit; }
 .steps li { counter-increment: step; position: relative; padding-left: 48px; color: var(--muted); }
 .steps li strong { color: var(--ink); display: block; }
 .steps li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 32px; height: 32px; border-radius: 50%; background: var(--accent-strong); color: #fff; font-family: 'Space Grotesk', sans-serif; font-weight: 700; display: grid; place-items: center; }
+.prose .steps { margin-bottom: 1.4em; }
 .clip-plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: stretch; }
 .clip-plans .package > p:not(.price) { margin-bottom: 1.4em; }
 .feature-link { margin: 12px 0 0 !important; }
