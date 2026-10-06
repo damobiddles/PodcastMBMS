@@ -199,6 +199,18 @@ a { color: inherit; }
 .platforms-light span { border-color: var(--line); color: var(--ink); background: #fff; }
 .video-empty { color: #a9a6b2; margin: 0; }
 
+/* YouTube clips service */
+.yt-split { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin: 8px 0 40px; }
+.yt-split > div { min-width: 0; }
+.steps { margin: 1em 0 0; padding: 0; list-style: none; counter-reset: step; display: grid; gap: 16px; }
+.steps li { counter-increment: step; position: relative; padding-left: 48px; color: var(--muted); }
+.steps li strong { color: var(--ink); display: block; }
+.steps li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: #fff; font-family: 'Space Grotesk', sans-serif; font-weight: 700; display: grid; place-items: center; }
+.clip-plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: stretch; }
+.clip-plans .package > p:not(.price) { margin-bottom: 1.4em; }
+.feature-link { margin: 12px 0 0 !important; }
+.feature-link a { color: var(--accent); font-weight: 600; text-decoration: none; }
+
 /* The Pod Pivot */
 .pod-pivot { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
 .pod-pivot-intro { display: grid; grid-template-columns: 180px 1fr; gap: 28px; align-items: start; min-width: 0; }
@@ -340,7 +352,7 @@ a { color: inherit; }
   .clip-caption { font-size: .75rem; }
   .clip-handle { bottom: 10px; left: 10px; font-size: .65rem; }
   .clip-square .clip-speakers { display: none; }
-  .gallery, .kit-grid, .pod-pivot { grid-template-columns: 1fr; }
+  .gallery, .kit-grid, .pod-pivot, .yt-split, .clip-plans { grid-template-columns: 1fr; }
   .pod-pivot-intro { grid-template-columns: 1fr; }
   .pod-pivot-cover { max-width: 220px; }
   .gallery-main { grid-row: auto; }
