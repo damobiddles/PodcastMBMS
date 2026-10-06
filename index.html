@@ -485,9 +485,12 @@
           <p>Tell us a little about your show and what kind of support you're looking for. We'll come back to you with ideas and a package that fits.</p>
           <p class="signoff">Kind regards,<br><strong>The MBMS team</strong></p>
         </div>
-        <form class="contact-form" id="contact-form" name="contact" method="POST" action="/thank-you/" data-netlify="true" netlify-honeypot="bot-field">
-          <input type="hidden" name="form-name" value="contact">
-          <p class="hp-field" aria-hidden="true"><label>Leave this empty<input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <form class="contact-form" id="contact-form" method="POST" action="https://api.web3forms.com/submit">
+          <input type="hidden" name="access_key" value="95f29508-982a-4ad9-98e0-50430e1ecd37">
+          <input type="hidden" name="subject" value="New podcast enquiry from mbmspodcaststudio.com">
+          <input type="hidden" name="from_name" value="MBMS Podcast Studio website">
+          <input type="hidden" name="redirect" value="https://mbmspodcaststudio.com/thank-you/">
+          <p class="hp-field" aria-hidden="true"><label>Leave this empty<input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></label></p>
           <label>Name<input type="text" name="name" required autocomplete="name"></label>
           <label>Email<input type="email" name="email" required autocomplete="email"></label>
           <label>I'm interested in

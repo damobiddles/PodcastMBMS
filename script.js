@@ -29,22 +29,26 @@ links.querySelectorAll('a').forEach((a) =>
 );
 
 // Opens the visitor's email client with the enquiry pre-filled.
-// Sends the contact form to Netlify Forms without leaving the page.
-// Without JavaScript, the form still posts normally and lands on /thank-you/.
+// Sends the contact form to Web3Forms, which emails it to CONTACT_EMAIL, without leaving the page.
+// Without JavaScript, the form still posts normally and Web3Forms redirects to /thank-you/.
 const contactForm = document.getElementById('contact-form');
 contactForm?.addEventListener('submit', async (e) => {
   e.preventDefault();
   const status = document.getElementById('form-status');
   const button = contactForm.querySelector('button[type="submit"]');
+  const data = new FormData(contactForm);
+  data.set('subject', `Podcast enquiry: ${data.get('interest')} (${data.get('name')})`);
+  data.delete('redirect');
   button.disabled = true;
   button.textContent = 'Sending…';
   try {
-    const res = await fetch('/', {
+    const res = await fetch(contactForm.action, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(new FormData(contactForm)).toString(),
+      headers: { Accept: 'application/json' },
+      body: data,
     });
-    if (!res.ok) throw new Error(res.status);
+    const json = await res.json();
+    if (!res.ok || !json.success) throw new Error(json.message || res.status);
     contactForm.reset();
     status.className = 'form-status form-status-ok';
     status.textContent = "Thanks, your enquiry has been sent. We'll be in touch soon.";
