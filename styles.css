@@ -87,6 +87,10 @@ a { color: inherit; }
 /* Levels */
 .levels { padding-bottom: 40px; }
 .levels-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.levels-more { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 32px; margin-top: 20px; color: var(--muted); font-size: .95rem; }
+.levels-more p { margin: 0; }
+.levels-more a { color: var(--accent); font-weight: 600; text-decoration: none; }
+.levels-more a:hover { text-decoration: underline; }
 .level-card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 32px; }
 .level-card-accent { background: var(--dark); color: #fff; border-color: var(--dark); }
 .level-card-accent p { color: #c9c6d1; }
