@@ -263,13 +263,13 @@ a { color: inherit; }
 /* FAQ */
 .faq { display: grid; grid-template-columns: 1fr 1.6fr; gap: 56px; align-items: start; }
 .faq-list { display: grid; gap: 12px; min-width: 0; }
-.faq details { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 0 22px; }
-.faq summary { cursor: pointer; list-style: none; padding: 18px 32px 18px 0; position: relative; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.05rem; }
-.faq summary::-webkit-details-marker { display: none; }
-.faq summary::after { content: '+'; position: absolute; right: 0; top: 50%; transform: translateY(-50%); font-size: 1.5rem; font-weight: 500; color: var(--accent-text); }
-.faq details[open] summary::after { content: '\2212'; }
-.faq summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 4px; }
-.faq details p { margin: 0 0 18px; color: var(--muted); }
+:is(.faq, .post-faq) details { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 0 22px; }
+:is(.faq, .post-faq) summary { cursor: pointer; list-style: none; padding: 18px 32px 18px 0; position: relative; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.05rem; }
+:is(.faq, .post-faq) summary::-webkit-details-marker { display: none; }
+:is(.faq, .post-faq) summary::after { content: '+'; position: absolute; right: 0; top: 50%; transform: translateY(-50%); font-size: 1.5rem; font-weight: 500; color: var(--accent-text); }
+:is(.faq, .post-faq) details[open] summary::after { content: '\2212'; }
+:is(.faq, .post-faq) summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 4px; }
+:is(.faq, .post-faq) details p { margin: 0 0 18px; color: var(--muted); }
 
 /* Contact */
 .contact { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
@@ -283,7 +283,7 @@ a { color: inherit; }
 .contact > * { min-width: 0; }
 .contact-form select { width: 100%; min-width: 0; }
 .hp-field { position: absolute; left: -9999px; }
-.faq details a { color: var(--accent-text); font-weight: 600; }
+:is(.faq, .post-faq) details a { color: var(--accent-text); font-weight: 600; }
 .book-call { margin-top: 2em; padding: 20px 24px; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; }
 .book-call p { margin: 0 0 1em; }
 .form-status { margin: 0; padding: 12px 16px; border-radius: 10px; font-weight: 500; }
