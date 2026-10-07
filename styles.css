@@ -152,6 +152,7 @@ p, li { text-wrap: pretty; }
 .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
 .service { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; display: flex; flex-direction: column; }
 .service p { color: var(--muted); }
+.service p a { color: var(--accent-text); font-weight: 600; }
 .service-price { margin-top: auto; margin-bottom: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.35rem; color: var(--ink) !important; }
 .service-price span { font-family: 'Inter', sans-serif; font-weight: 400; font-size: .85rem; color: var(--muted); }
 
