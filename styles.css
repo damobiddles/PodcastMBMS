@@ -155,7 +155,14 @@ p, li { text-wrap: pretty; }
 .service-price { margin-top: auto; margin-bottom: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.35rem; color: var(--ink) !important; }
 .service-price span { font-family: 'Inter', sans-serif; font-weight: 400; font-size: .85rem; color: var(--muted); }
 
-.service-wide { grid-column: 1 / -1; }
+.service-wide { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr auto; column-gap: 40px; align-items: center; }
+.service-wide h3, .service-wide p:not(.service-price) { grid-column: 1; }
+.service-wide p:not(.service-price) { margin-bottom: 0; }
+.service-wide .service-price { grid-column: 2; grid-row: 1 / span 2; margin: 0; white-space: nowrap; }
+@media (max-width: 600px) {
+  .service-wide { display: flex; align-items: stretch; }
+  .service-wide p:not(.service-price) { margin-bottom: 1em; }
+}
 
 /* Marketing */
 .feature-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
