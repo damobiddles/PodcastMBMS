@@ -32,6 +32,9 @@ h3 { font-size: 1.2rem; }
 p { margin: 0 0 1em; }
 a { color: inherit; }
 
+h1, h2, h3, .eyebrow { text-wrap: balance; }
+p, li { text-wrap: pretty; }
+
 .container { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 20px; }
 
 .eyebrow {
@@ -247,6 +250,7 @@ a { color: inherit; }
 .package > p:not(.price) { color: var(--muted); }
 .package-featured { border: 2px solid var(--accent); box-shadow: 0 24px 48px rgba(255, 90, 54, .12); }
 .badge { position: absolute; top: -13px; left: 36px; background: var(--accent-strong); color: #fff; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; padding: .35em .9em; border-radius: 999px; }
+.note a { color: var(--accent-text); font-weight: 600; }
 .note { margin-top: 2.5em; padding: 20px 24px; border-left: 4px solid var(--accent); background: var(--bg); border-radius: 0 12px 12px 0; color: var(--muted); }
 .note strong { color: var(--ink); }
 
