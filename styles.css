@@ -75,7 +75,7 @@ p, li { text-wrap: pretty; }
 .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--ink); margin: 5px 0; }
 
 /* Hero */
-.hero { padding: 90px 0 70px; overflow: hidden; }
+.hero { padding: 90px 0 70px; overflow: hidden; position: relative; }
 .hero-inner { max-width: 880px; text-align: center; }
 .lede { font-size: 1.15rem; color: var(--muted); max-width: 640px; margin: 0 auto 2em; }
 .hero-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
@@ -409,4 +409,25 @@ p, li { text-wrap: pretty; }
   .section { padding: 64px 0; }
   .hero { padding: 64px 0 48px; }
   .contact-form { padding: 24px; }
+}
+
+
+/* Cookies: a light, decorative sprinkle (never near forms, so nobody mistakes them for consent icons) */
+.cookie { display: block; height: auto; pointer-events: none; user-select: none; }
+.cookie-hero { position: absolute; z-index: 0; animation: cookie-float 7s ease-in-out infinite; }
+.hero-inner { position: relative; z-index: 1; }
+.cookie-hero-1 { width: 64px; top: 120px; left: max(24px, calc(50% - 560px)); transform: rotate(-12deg); }
+.cookie-hero-2 { width: 44px; top: 330px; right: max(32px, calc(50% - 540px)); transform: rotate(18deg); animation-delay: -2.5s; }
+.cookie-hero-3 { width: 30px; top: 70px; right: max(90px, calc(50% - 430px)); transform: rotate(40deg); animation-delay: -5s; }
+.cookie-about { width: 88px; margin-top: 2em; transform: rotate(-10deg); }
+.services-cta { position: relative; overflow: hidden; }
+.cookie-cta { position: absolute; width: 110px; left: -26px; bottom: -30px; transform: rotate(14deg); }
+.cookie-page { width: 96px; margin-bottom: 1.2em; transform: rotate(-10deg); }
+@keyframes cookie-float { 0%, 100% { translate: 0 0; } 50% { translate: 0 -8px; } }
+@media (prefers-reduced-motion: reduce) { .cookie-hero { animation: none; } }
+@media (max-width: 860px) {
+  .cookie-hero-2, .cookie-about { display: none; }
+  .cookie-hero-1 { width: 40px; top: 28px; left: 16px; }
+  .cookie-hero-3 { width: 26px; top: 40px; right: 24px; }
+  .cookie-cta { width: 84px; }
 }
