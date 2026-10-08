@@ -416,18 +416,18 @@ p, li { text-wrap: pretty; }
 .mic { display: block; height: auto; pointer-events: none; user-select: none; }
 .mic-hero { position: absolute; z-index: 0; animation: mic-float 7s ease-in-out infinite; }
 .hero-inner { position: relative; z-index: 1; }
-.mic-hero-1 { width: 84px; top: 110px; left: max(24px, calc(50% - 560px)); transform: rotate(-8deg); }
-.mic-hero-2 { width: 58px; top: 320px; right: max(32px, calc(50% - 540px)); transform: rotate(8deg); animation-delay: -2.5s; }
-.mic-hero-3 { width: 40px; top: 64px; right: max(90px, calc(50% - 430px)); transform: rotate(-6deg); animation-delay: -5s; }
-.mic-about { width: 92px; margin-top: 2em; transform: rotate(-6deg); }
+.mic-hero-1 { width: 140px; top: 84px; left: max(24px, calc(50% - 560px)); transform: rotate(-8deg); }
+.mic-hero-2 { width: 104px; top: 296px; right: max(32px, calc(50% - 540px)); transform: rotate(8deg); animation-delay: -2.5s; }
+.mic-hero-3 { width: 72px; top: 48px; right: max(90px, calc(50% - 430px)); transform: rotate(-6deg); animation-delay: -5s; }
+.mic-about { width: 150px; margin-top: 2em; transform: rotate(-6deg); }
 .services-cta { position: relative; overflow: hidden; }
-.mic-cta { position: absolute; width: 110px; left: 24px; bottom: -14px; transform: rotate(-8deg); opacity: .9; }
-.mic-page { width: 96px; margin-bottom: 1.2em; transform: rotate(-6deg); }
+.mic-cta { position: absolute; width: 150px; left: 24px; bottom: -18px; transform: rotate(-8deg); opacity: .9; }
+.mic-page { width: 130px; margin-bottom: 1.2em; transform: rotate(-6deg); }
 @keyframes mic-float { 0%, 100% { translate: 0 0; } 50% { translate: 0 -8px; } }
 @media (prefers-reduced-motion: reduce) { .mic-hero { animation: none; } }
 @media (max-width: 860px) {
   .mic-hero-2, .mic-about { display: none; }
-  .mic-hero-1 { width: 44px; top: 24px; left: 16px; }
-  .mic-hero-3 { width: 30px; top: 34px; right: 22px; }
-  .mic-cta { width: 76px; left: 12px; }
+  .mic-hero-1 { width: 70px; top: 14px; left: 6px; }
+  .mic-hero-3 { width: 42px; top: 26px; right: 14px; }
+  .mic-cta { width: 100px; left: 8px; }
 }
