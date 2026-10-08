@@ -1,7 +1,12 @@
 // Sections that moved from the home page to the Services page: keep old links working.
 (function () {
-  const moved = ['recording', 'hale-house', 'mobile-remote', 'post-production', 'marketing', 'youtube-clips', 'packages'];
-  const id = location.hash.slice(1);
+  const renamed = { 'hale-house': 'great-portland-street' };
+  const moved = ['recording', 'great-portland-street', 'mobile-remote', 'post-production', 'marketing', 'youtube-clips', 'packages'];
+  let id = location.hash.slice(1);
+  if (renamed[id]) {
+    id = renamed[id];
+    if (document.getElementById(id)) { location.replace('#' + id); return; }
+  }
   if (id && moved.includes(id) && !document.getElementById(id) && document.querySelector('.hero')) {
     location.replace('services/#' + id);
   }

@@ -2,7 +2,7 @@
 
 > Podcast production studio based in Marlow, Buckinghamshire, UK, recording in London studios, on location and remotely. We record, edit, publish and promote podcasts for businesses, and help them turn each episode into clips, posts and articles for their wider marketing.
 
-MBMS Podcast Studio was founded by Damien and has a marketing background, with experience across B2B SaaS, cybersecurity, insurance technology, healthcare, retail and the video games industry, both agency-side and in-house. As well as recording and editing, we help clients shape the idea, plan guests and turn each conversation into content that supports their business goals. We record at venues in London including Hale House, bring a RØDE mobile studio to clients' offices and events in Marlow, the Thames Valley, London and beyond, and record remote guests with Riverside.
+MBMS Podcast Studio was founded by Damien and has a marketing background, with experience across B2B SaaS, cybersecurity, insurance technology, healthcare, retail and the video games industry, both agency-side and in-house. As well as recording and editing, we help clients shape the idea, plan guests and turn each conversation into content that supports their business goals. We record at venues in London including Great Portland Street Studio, bring a RØDE mobile studio to clients' offices and events in Marlow, the Thames Valley, London and beyond, and record remote guests with Riverside.
 
 ## Services and guide prices
 
@@ -25,8 +25,8 @@ Prices are guidelines, not fixed rates.
 
 ## Pages
 
-- [Home](https://mbmspodcaststudio.com/): overview, Hale House, case study, The Pod Pivot, about the studio, FAQ and contact
-- [Services and prices](https://mbmspodcaststudio.com/services/): recording, Hale House, mobile and remote recording, post-production, marketing, YouTube clips and packages
+- [Home](https://mbmspodcaststudio.com/): overview, Great Portland Street Studio, case study, The Pod Pivot, about the studio, FAQ and contact
+- [Services and prices](https://mbmspodcaststudio.com/services/): recording, Great Portland Street Studio, mobile and remote recording, post-production, marketing, YouTube clips and packages
 - [Blog](https://mbmspodcaststudio.com/blog/): behind the scenes and practical podcasting advice
 - [How much does it cost to make a podcast? Marlow, the Thames Valley and London](https://mbmspodcaststudio.com/blog/how-much-does-a-podcast-cost/)
 - [How B2B companies turn a podcast into a pipeline of content and leads](https://mbmspodcaststudio.com/blog/b2b-podcast-pipeline/)
