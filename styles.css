@@ -485,3 +485,8 @@ h3 { font-weight: 700; }
 .skip-link:focus { top: 12px; }
 a:focus-visible, button:focus-visible, .btn:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid var(--accent-strong); outline-offset: 3px; }
 .section-dark a:focus-visible, .site-footer a:focus-visible, .post-cta a:focus-visible { outline-color: var(--accent); }
+
+/* Playbook waitlist */
+.playbook-split { align-items: start; }
+.playbook-split h3 { margin-top: .4em; }
+.playbook-split .checklist + h3 { margin-top: 1.6em; }

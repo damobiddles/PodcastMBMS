@@ -75,6 +75,34 @@ contactForm?.addEventListener('submit', async (e) => {
   status.hidden = false;
 });
 
+// Playbook waitlist: same Web3Forms setup as the contact form.
+const waitlistForm = document.getElementById('waitlist-form');
+waitlistForm?.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const status = document.getElementById('waitlist-status');
+  const button = waitlistForm.querySelector('button[type="submit"]');
+  const data = new FormData(waitlistForm);
+  data.set('subject', `Playbook waitlist: ${data.get('name')} (${data.get('currently_making')})`);
+  data.delete('redirect');
+  button.disabled = true;
+  button.textContent = 'Joining…';
+  try {
+    const res = await fetch(waitlistForm.action, { method: 'POST', headers: { Accept: 'application/json' }, body: data });
+    const json = await res.json();
+    if (!res.ok || !json.success) throw new Error(json.message || res.status);
+    waitlistForm.reset();
+    status.className = 'form-status form-status-ok';
+    status.textContent = "You're on the list. We'll email you when the playbook is ready.";
+    button.textContent = 'Joined';
+  } catch {
+    status.className = 'form-status form-status-error';
+    status.innerHTML = `Sorry, that didn't go through. Please email us at <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`;
+    button.disabled = false;
+    button.textContent = 'Join the waitlist';
+  }
+  status.hidden = false;
+});
+
 // Embeds YouTube videos from their data-youtube-id.
 document.querySelectorAll('.video-frame[data-youtube-id]').forEach((el) => {
   const id = el.dataset.youtubeId.trim();
