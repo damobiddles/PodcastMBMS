@@ -26,6 +26,15 @@ toggle.addEventListener('click', () => {
   toggle.setAttribute('aria-expanded', String(open));
 });
 
+// Escape closes the mobile menu and returns focus to the menu button.
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && links.classList.contains('open')) {
+    links.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.focus();
+  }
+});
+
 links.querySelectorAll('a').forEach((a) =>
   a.addEventListener('click', () => {
     links.classList.remove('open');
@@ -33,7 +42,6 @@ links.querySelectorAll('a').forEach((a) =>
   })
 );
 
-// Opens the visitor's email client with the enquiry pre-filled.
 // Sends the contact form to Web3Forms, which emails it to CONTACT_EMAIL, without leaving the page.
 // Without JavaScript, the form still posts normally and Web3Forms redirects to /thank-you/.
 const contactForm = document.getElementById('contact-form');
