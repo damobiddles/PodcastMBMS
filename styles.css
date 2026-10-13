@@ -498,3 +498,18 @@ a:focus-visible, button:focus-visible, .btn:focus-visible, input:focus-visible, 
 .download-box p { color: var(--muted); }
 .download-box .btn { white-space: normal; text-align: center; }
 @media (max-width: 560px) { .download-box { grid-template-columns: 1fr; } .download-box img { max-width: 160px; } }
+
+/* Why podcasts work: stat tiles */
+.stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.stat { background: var(--dark-soft); border: 1px solid #34323c; border-radius: var(--radius); padding: 26px 24px; display: flex; flex-direction: column; }
+.stat p { margin: 0; }
+.stat-num { font-family: 'Poppins', sans-serif; font-weight: 800; font-size: clamp(2.6rem, 5vw, 3.4rem); line-height: 1; letter-spacing: -.02em; color: #fff !important; margin-bottom: .35em !important; }
+.stat-accent { background: var(--accent); border-color: var(--accent); }
+.stat-accent .stat-num, .stat-accent .stat-label { color: var(--ink) !important; }
+.stat-accent .stat-source { color: rgba(23, 22, 28, .75) !important; }
+.stat-label { font-weight: 600; color: #fff !important; line-height: 1.45; }
+.stat-source { margin-top: auto !important; padding-top: 1em; font-size: .8rem; color: var(--on-dark-muted) !important; }
+.stat-sources { margin-top: 1.6em; font-size: .85rem; color: var(--on-dark-muted) !important; }
+.stat-sources a { color: var(--on-dark); }
+@media (max-width: 960px) { .stat-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .stat-grid { grid-template-columns: 1fr; } }
