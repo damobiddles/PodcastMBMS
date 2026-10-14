@@ -329,6 +329,7 @@ p, li { text-wrap: pretty; }
 .back-link { display: inline-block; margin-bottom: 1.5em; font-weight: 600; text-decoration: none; color: var(--accent-text); }
 .post-figure { margin: 1.8em 0; }
 .post-figure img { display: block; width: 100%; max-width: 100%; height: auto; border-radius: var(--radius); }
+.post-figure > video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border-radius: var(--radius); background: var(--dark); }
 .post-figure figcaption { margin-top: 8px; font-size: .85rem; color: var(--muted); }
 .post-show { display: flex; align-items: center; gap: 16px; margin: 1.5em 0; }
 .post-show img { width: 96px; height: 96px; flex: none; border-radius: 12px; }
