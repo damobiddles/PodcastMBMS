@@ -129,11 +129,12 @@
             </div>
           </article>
           <article class="case">
+            <img src="/images/video-games-podcast.svg" width="800" height="450" loading="lazy" alt="Illustration of a games controller with a recording light and sound wave">
             <div class="case-body">
-              <p class="case-tag">Healthcare &middot; Product launch</p>
-              <h3>A healthcare software company</h3>
-              <p>A podcast interviewing leading professors and clinicians from the client’s network, built to support the launch of a new app. Every episode becomes clips, transcripts, blog posts and press material.</p>
-              <p class="case-result"><strong>Result:</strong> 14 episodes so far, each one turned into clips, transcripts, blog posts and press material.</p>
+              <p class="case-tag">Video games &middot; Publishing</p>
+              <h3>Video game publishers</h3>
+              <p>We have marketing experience in the video games industry, so we know how launches, communities and release schedules work. A podcast gives publishers a home for developer interviews, behind-the-scenes stories and launch build-up, with every episode cut into clips for your channels.</p>
+              <p class="case-result"><strong>Ideal for:</strong> launch campaigns, developer diaries, community updates and studio culture.</p>
             </div>
           </article>
           <article class="case">
@@ -234,20 +235,38 @@
     </section>
 
     <section class="section" id="peter">
-      <div class="container">
-        <div class="peter-card">
-          <img class="peter-photo" src="/images/peter-bw.webp" width="420" height="420" loading="lazy" alt="Peter, MBMS Podcast Studio">
-          <div>
-            <p class="eyebrow">Your next step</p>
-            <h2>Talk to Peter</h2>
-            <p>Peter looks after new clients at MBMS Podcast Studio. He’ll help you work out what a podcast could do for your business, which format suits you and how to get the most from every episode.</p>
-            <p>On a short call, Peter will ask what you want the podcast to achieve, suggest a format and give you a clear price. No pressure, and no jargon.</p>
-            <div class="hero-actions" style="justify-content: flex-start">
-              <a href="https://mbmspodcaststudio.simplybook.me/v2/" class="btn" target="_blank" rel="noopener">Book a call with Peter</a>
-              <a href="mailto:meadowbms@gmail.com" class="btn btn-ghost">Email Peter</a>
-            </div>
-          </div>
+      <div class="container contact">
+        <div>
+          <img class="peter-photo peter-photo-sm" src="/images/peter-bw.webp" width="420" height="420" loading="lazy" alt="Peter, MBMS Podcast Studio">
+          <p class="eyebrow">Your next step</p>
+          <h2>Talk to Peter</h2>
+          <p>Peter looks after new clients at MBMS Podcast Studio. He’ll help you work out what a podcast could do for your business, which format suits you and how to get the most from every episode.</p>
+          <p>Send Peter a message and he’ll come back to you with a format and a clear price. No pressure, and no jargon.</p>
+          <p>Prefer to talk? <a class="text-link" href="https://mbmspodcaststudio.simplybook.me/v2/" target="_blank" rel="noopener">Book a call with Peter</a>.</p>
         </div>
+        <form class="contact-form" id="contact-form" method="POST" action="https://api.web3forms.com/submit">
+          <input type="hidden" name="access_key" value="95f29508-982a-4ad9-98e0-50430e1ecd37">
+          <input type="hidden" name="subject" value="New enquiry from the Work with us page">
+          <input type="hidden" name="from_name" value="MBMS Podcast Studio website">
+          <input type="hidden" name="page" value="Work with us (for Peter)">
+          <input type="hidden" name="redirect" value="https://mbmspodcaststudio.com/thank-you/">
+          <p class="hp-field" aria-hidden="true"><label>Leave this empty<input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></label></p>
+          <label>Name<input type="text" name="name" required autocomplete="name"></label>
+          <label>Email<input type="email" name="email" required autocomplete="email"></label>
+          <label>Company<input type="text" name="company" autocomplete="organization"></label>
+          <label>I'm interested in
+            <select name="interest">
+              <option>Pilot episode</option>
+              <option>Complete episode package</option>
+              <option>Monthly package</option>
+              <option>Clips from an existing podcast or webinar</option>
+              <option>Not sure yet</option>
+            </select>
+          </label>
+          <label>Message<textarea name="message" rows="4" placeholder="What would you like your podcast to do for your business?"></textarea></label>
+          <button type="submit" class="btn btn-block">Send to Peter</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
+        </form>
       </div>
     </section>
   </main>

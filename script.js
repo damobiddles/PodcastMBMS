@@ -49,8 +49,10 @@ contactForm?.addEventListener('submit', async (e) => {
   e.preventDefault();
   const status = document.getElementById('form-status');
   const button = contactForm.querySelector('button[type="submit"]');
+  const label = button.textContent;
   const data = new FormData(contactForm);
-  data.set('subject', `Podcast enquiry: ${data.get('interest')} (${data.get('name')})`);
+  const page = data.get('page') ? `${data.get('page')}: ` : '';
+  data.set('subject', `${page}Podcast enquiry: ${data.get('interest')} (${data.get('name')})`);
   data.delete('redirect');
   button.disabled = true;
   button.textContent = 'Sending…';
@@ -70,7 +72,7 @@ contactForm?.addEventListener('submit', async (e) => {
     status.className = 'form-status form-status-error';
     status.innerHTML = `Sorry, that didn't send. Please email us at <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`;
     button.disabled = false;
-    button.textContent = 'Send enquiry';
+    button.textContent = label;
   }
   status.hidden = false;
 });
