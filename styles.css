@@ -567,3 +567,6 @@ a:focus-visible, button:focus-visible, .btn:focus-visible, input:focus-visible, 
 .font-card { background: var(--label); border: var(--border-soft); border-radius: var(--radius); padding: 22px; }
 .font-sample { font-size: 2rem; line-height: 1.1; color: var(--ink) !important; margin: 0 0 .4em; }
 .boilerplate { margin: .6em 0 1.4em; padding: 18px 22px; background: var(--label); border: var(--border-soft); border-left: 4px solid var(--accent); border-radius: var(--radius); user-select: all; }
+
+.package-grid-3 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
+.offer-places { margin-top: .6em; display: inline-block; background: var(--ink); color: #fff !important; padding: .25em .7em; border-radius: 99px; font-size: .9rem; }
