@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect width="800" height="450" fill="#e9e4dc"/>
+  <polygon points="250,250 690,236 470,440" fill="#ff5a36"/>
+  <g transform="rotate(-6 400 225)">
+    <path d="M250 140 h300 c70 0 105 40 120 110 l22 100 c10 45 -35 70 -70 40 l-70 -65 h-304 l-70 65 c-35 30 -80 5 -70 -40 l22 -100 c15 -70 50 -110 120 -110z" fill="#f8f6f1" stroke="#17161c" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="243" y="200" width="26" height="78" rx="4" fill="#17161c"/>
+    <rect x="217" y="226" width="78" height="26" rx="4" fill="#17161c"/>
+    <circle cx="560" cy="205" r="17" fill="#ff5a36" stroke="#17161c" stroke-width="5"/>
+    <circle cx="600" cy="242" r="17" fill="#17161c"/>
+    <circle cx="520" cy="242" r="17" fill="#17161c"/>
+    <circle cx="560" cy="279" r="17" fill="#ff5a36" stroke="#17161c" stroke-width="5"/>
+    <circle cx="400" cy="200" r="27" fill="#ff5a36" fill-opacity=".28"/>
+    <circle cx="400" cy="200" r="19" fill="#ff5a36"/>
+    <g fill="#17161c">
+      <rect x="349" y="252" width="9" height="22" rx="4.5"/><rect x="364" y="244" width="9" height="38" rx="4.5"/>
+      <rect x="379" y="236" width="9" height="54" rx="4.5"/><rect x="394" y="248" width="9" height="30" rx="4.5"/>
+      <rect x="409" y="232" width="9" height="62" rx="4.5"/><rect x="424" y="246" width="9" height="34" rx="4.5"/>
+      <rect x="439" y="254" width="9" height="18" rx="4.5"/>
+    </g>
+  </g>
+  <g transform="rotate(-3 150 70)">
+    <rect x="48" y="40" width="224" height="62" fill="#f8f6f1" stroke="#17161c" stroke-width="5"/>
+    <text x="160" y="83" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-weight="800" font-size="30" fill="#17161c">Press start</text>
+  </g>
+</svg>
