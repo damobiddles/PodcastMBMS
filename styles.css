@@ -535,5 +535,5 @@ a:focus-visible, button:focus-visible, .btn:focus-visible, input:focus-visible, 
 .case blockquote { margin: .8em 0 0; padding-left: 14px; border-left: 3px solid var(--accent); font-style: italic; color: var(--muted); }
 .wwu-packages { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
 .peter-card { display: grid; grid-template-columns: 220px 1fr; gap: 40px; align-items: center; grid-column: 1 / -1; }
-.peter-photo { aspect-ratio: 1; border-radius: 50%; border: var(--border); background: var(--bg-alt); display: grid; place-items: center; text-align: center; padding: 20px; }
+.peter-photo { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 50%; border: var(--border); background: var(--bg-alt); }
 @media (max-width: 700px) { .peter-card { grid-template-columns: 1fr; gap: 20px; } .peter-photo { width: 160px; } }
