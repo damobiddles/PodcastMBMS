@@ -498,6 +498,10 @@ a:focus-visible, button:focus-visible, .btn:focus-visible, input:focus-visible, 
 .download-box p { color: var(--muted); }
 .download-box .btn { white-space: normal; text-align: center; }
 @media (max-width: 560px) { .download-box { grid-template-columns: 1fr; } .download-box img { max-width: 160px; } }
+.freebies { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 24px; margin-top: 1.4em; }
+.freebies .download-box { margin: 0; grid-template-columns: 120px 1fr; }
+.download-box h3 { margin: 0 0 .3em; font-size: 1.2rem; }
+@media (max-width: 560px) { .freebies .download-box { grid-template-columns: 1fr; } }
 
 /* Why podcasts work: stat tiles */
 .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
