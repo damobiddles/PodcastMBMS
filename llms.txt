@@ -29,6 +29,7 @@ Prices are guidelines, not fixed rates.
 - [Home](https://mbmspodcaststudio.com/): overview, Great Portland Street Studio, case study, The Podcast Pivot, about the studio, FAQ and contact
 - [Services and prices](https://mbmspodcaststudio.com/services/): recording, Great Portland Street Studio, mobile and remote recording, post-production, marketing, YouTube clips and packages
 - [Blog](https://mbmspodcaststudio.com/blog/): behind the scenes and practical podcasting advice
+- [Case study: MBMS Podcast Studio](https://mbmspodcaststudio.com/case-studies/mbms-podcast-studio/): how we built our own podcast, website, brand and lead capture in 17 days
 - [Media kit](https://mbmspodcaststudio.com/media-kit/): logos, LinkedIn banners, podcast artwork, brand colours, fonts and company descriptions
 - [The full podcast package: show, website, social and email, done for you](https://mbmspodcaststudio.com/blog/full-podcast-package/)
 - [From first chat to first episode: what working with us looks like](https://mbmspodcaststudio.com/blog/what-working-with-us-looks-like/)
