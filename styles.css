@@ -570,3 +570,10 @@ a:focus-visible, button:focus-visible, .btn:focus-visible, input:focus-visible, 
 
 .package-grid-3 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
 .offer-places { margin-top: .6em; display: inline-block; background: var(--ink); color: #fff !important; padding: .25em .7em; border-radius: 99px; font-size: .9rem; }
+
+/* Home: what every episode becomes */
+.episode-outputs { margin-top: 28px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; }
+.episode-outputs-label { margin: 0; font-family: 'Poppins', sans-serif; font-weight: 800; font-size: .95rem; color: var(--ink); }
+.episode-outputs ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.episode-outputs li { padding: .35em .9em; border: var(--border); border-radius: 99px; background: var(--label); font-size: .9rem; font-weight: 600; }
+.episode-outputs li:first-child { background: var(--accent); }
