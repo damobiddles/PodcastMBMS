@@ -620,3 +620,11 @@ a:focus-visible, button:focus-visible, .btn:focus-visible, input:focus-visible, 
 }
 .cs-more { margin-top: 1.4em; }
 .cs-contact { margin-top: 1.4em; font-size: .9rem; }
+
+/* About and case study hub */
+.about-person { display: grid; grid-template-columns: 220px 1fr; gap: 48px; align-items: start; }
+.about-person .peter-photo { width: 220px; }
+.about-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); }
+.case-grid-2 { grid-template-columns: repeat(2, 1fr); }
+.case-title { font-size: 1.3rem; margin: 0 0 .3em; }
+@media (max-width: 760px) { .about-person { grid-template-columns: 1fr; gap: 20px; } .about-person .peter-photo { width: 140px; } .case-grid-2 { grid-template-columns: 1fr; } }

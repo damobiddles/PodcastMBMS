@@ -2,7 +2,7 @@
 
 > Podcast and content studio based in Marlow, Buckinghamshire, UK, recording in London studios, on location and remotely. We make podcasts for businesses, then turn every episode into a month of marketing: clips, LinkedIn posts, articles, newsletters and a four-week posting plan.
 
-MBMS Podcast Studio was founded by Damien and has a marketing background, with experience across B2B SaaS, cybersecurity, insurance technology, healthcare, retail and the video games industry, both agency-side and in-house. As well as recording and editing, we help clients shape the idea, plan guests and turn each conversation into content that supports their business goals. We record at venues in London including Great Portland Street Studio, bring a RØDE mobile studio to clients' offices and events in Marlow, the Thames Valley, London and beyond, and record remote guests with Riverside.
+MBMS Podcast Studio was founded by Damien Bidmead and has a marketing background, with experience across B2B SaaS, cybersecurity, insurance technology, healthcare, retail and the video games industry, both agency-side and in-house. As well as recording and editing, we help clients shape the idea, plan guests and turn each conversation into content that supports their business goals. We record at venues in London including Great Portland Street Studio, bring a RØDE mobile studio to clients' offices and events in Marlow, the Thames Valley, London and beyond, and record remote guests with Riverside.
 
 ## Services and guide prices
 
@@ -28,6 +28,9 @@ Prices are guidelines, not fixed rates.
 
 - [Home](https://mbmspodcaststudio.com/): overview, Great Portland Street Studio, case study, The Podcast Pivot, about the studio, FAQ and contact
 - [Services and prices](https://mbmspodcaststudio.com/services/): recording, Great Portland Street Studio, mobile and remote recording, post-production, marketing, YouTube clips and packages
+- [About](https://mbmspodcaststudio.com/about/): the team behind MBMS Podcast Studio, founded by Damien Bidmead
+- [Case studies](https://mbmspodcaststudio.com/case-studies/): our own content engine, The Dokkcast for Udokk, Arco Cyber and Jiu Jitsu Fieldnotes
+- [Work with us](https://mbmspodcaststudio.com/work-with-us/): how we work, packages and prices, and how to get started
 - [Blog](https://mbmspodcaststudio.com/blog/): behind the scenes and practical podcasting advice
 - [Case study: MBMS Podcast Studio](https://mbmspodcaststudio.com/case-studies/mbms-podcast-studio/): how we built our own podcast, website, brand and lead capture in 17 days
 - [Media kit](https://mbmspodcaststudio.com/media-kit/): logos, LinkedIn banners, podcast artwork, brand colours, fonts and company descriptions
@@ -45,7 +48,7 @@ Prices are guidelines, not fixed rates.
 - [Your YouTube podcast is full of clips you're not using](https://mbmspodcaststudio.com/blog/your-youtube-podcast-is-full-of-clips/)
 - [Does Your Business Really Need a Podcast?](https://mbmspodcaststudio.com/blog/does-your-business-really-need-a-podcast/)
 - [Riverside vs Descript: which should you use for your podcast?](https://mbmspodcaststudio.com/blog/riverside-vs-descript/)
-- [Introducing The Podcast Pivot: a podcast for businesses that want to podcast properly](https://mbmspodcaststudio.com/blog/introducing-the-pod-pivot/)
+- [Introducing The Podcast Pivot: a podcast for businesses that want to podcast properly](https://mbmspodcaststudio.com/blog/introducing-the-podcast-pivot/)
 - [A podcast on the mats: good stories, good sound and a little improvisation](https://mbmspodcaststudio.com/blog/a-podcast-on-the-mats/)
 
 ## Contact
