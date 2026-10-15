@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect width="800" height="450" fill="#e9e4dc"/>
+  <polygon points="230,250 690,236 460,440" fill="#ff5a36"/>
+  <g transform="rotate(-4 400 225)">
+    <rect x="200" y="110" width="400" height="260" rx="10" fill="#f8f6f1" stroke="#17161c" stroke-width="7"/>
+    <line x1="200" y1="150" x2="600" y2="150" stroke="#17161c" stroke-width="6"/>
+    <circle cx="225" cy="130" r="7" fill="#ff5a36"/><circle cx="247" cy="130" r="7" fill="#17161c"/><circle cx="269" cy="130" r="7" fill="#17161c"/>
+    <rect x="232" y="176" width="190" height="26" fill="#17161c"/>
+    <rect x="232" y="214" width="150" height="26" fill="#ff5a36" stroke="#17161c" stroke-width="4"/>
+    <rect x="232" y="258" width="210" height="10" rx="5" fill="#a8a29a"/>
+    <rect x="232" y="278" width="170" height="10" rx="5" fill="#a8a29a"/>
+    <rect x="232" y="310" width="96" height="30" rx="15" fill="#ff5a36" stroke="#17161c" stroke-width="4"/>
+    <g fill="#17161c">
+      <rect x="470" y="232" width="9" height="24" rx="4.5"/><rect x="485" y="218" width="9" height="52" rx="4.5"/>
+      <rect x="500" y="204" width="9" height="80" rx="4.5" fill="#ff5a36"/><rect x="515" y="222" width="9" height="44" rx="4.5"/>
+      <rect x="530" y="210" width="9" height="68" rx="4.5"/><rect x="545" y="228" width="9" height="32" rx="4.5" fill="#ff5a36"/>
+      <rect x="560" y="236" width="9" height="16" rx="4.5"/>
+    </g>
+  </g>
+  <g transform="rotate(3 650 330)">
+    <rect x="590" y="300" width="130" height="200" rx="16" fill="#17161c"/>
+    <rect x="602" y="316" width="106" height="150" rx="6" fill="#f8f6f1"/>
+    <circle cx="655" cy="370" r="20" fill="#ff5a36" fill-opacity=".35"/><circle cx="655" cy="370" r="13" fill="#ff5a36"/>
+    <rect x="618" y="410" width="74" height="9" rx="4.5" fill="#17161c"/><rect x="618" y="426" width="54" height="9" rx="4.5" fill="#a8a29a"/>
+  </g>
+  <g transform="rotate(-3 160 70)">
+    <rect x="48" y="40" width="226" height="62" fill="#f8f6f1" stroke="#17161c" stroke-width="5"/>
+    <text x="161" y="83" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-weight="800" font-size="30" fill="#17161c">Full package</text>
+  </g>
+</svg>

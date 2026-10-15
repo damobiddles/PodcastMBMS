@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect width="800" height="450" fill="#e9e4dc"/>
+  <polygon points="220,250 680,236 450,440" fill="#ff5a36"/>
+  <g transform="rotate(-6 390 240)">
+    <rect x="200" y="206" width="380" height="40" rx="8" fill="#17161c"/>
+    <rect x="232" y="206" width="22" height="40" fill="#ff5a36"/>
+    <rect x="252" y="206" width="6" height="40" fill="#17161c"/>
+    <g transform="rotate(28 370 240)"><rect x="352" y="236" width="38" height="120" rx="6" fill="#17161c"/></g>
+    <g transform="rotate(-24 410 240)"><rect x="392" y="236" width="38" height="120" rx="6" fill="#17161c"/></g>
+    <rect x="360" y="196" width="66" height="60" rx="10" fill="#17161c" stroke="#e9e4dc" stroke-width="4"/>
+  </g>
+  <g transform="rotate(4 600 170)">
+    <rect x="560" y="70" width="80" height="130" rx="40" fill="#f8f6f1" stroke="#17161c" stroke-width="6"/>
+    <g stroke="#17161c" stroke-width="5" stroke-linecap="round">
+      <line x1="576" y1="104" x2="624" y2="104"/><line x1="574" y1="126" x2="626" y2="126"/><line x1="574" y1="148" x2="626" y2="148"/><line x1="576" y1="170" x2="624" y2="170"/>
+    </g>
+    <path d="M540 150 v14 a60 60 0 0 0 120 0 v-14" fill="none" stroke="#17161c" stroke-width="7" stroke-linecap="round"/>
+    <line x1="600" y1="226" x2="600" y2="262" stroke="#17161c" stroke-width="7"/>
+  </g>
+  <g transform="rotate(-3 160 70)">
+    <rect x="48" y="40" width="222" height="62" fill="#f8f6f1" stroke="#17161c" stroke-width="5"/>
+    <text x="159" y="83" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-weight="800" font-size="30" fill="#17161c">On the mats</text>
+  </g>
+</svg>
