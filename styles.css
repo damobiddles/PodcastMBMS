@@ -577,3 +577,15 @@ a:focus-visible, button:focus-visible, .btn:focus-visible, input:focus-visible, 
 .episode-outputs ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .episode-outputs li { padding: .35em .9em; border: var(--border); border-radius: 99px; background: var(--label); font-size: .9rem; font-weight: 600; }
 .episode-outputs li:first-child { background: var(--accent); }
+
+/* Full podcast package (wide card) */
+.package-full { margin-top: 36px; padding-top: 52px; display: grid; grid-template-columns: 1fr 1.3fr; gap: 12px 40px; background: var(--dark); color: #fff; border: 1.5px solid var(--ink); box-shadow: 5px 5px 0 var(--accent); --accent-text: var(--accent); }
+.package-full h3 { color: #fff; }
+.package-full p, .package-full > div > p:not(.price) { color: var(--on-dark); }
+.package-full .price span { color: #fff; }
+.package-full .checklist li { color: #fff; }
+.package-full .checklist strong { color: #fff; }
+.package-full .btn { margin-top: 1em; align-self: flex-start; }
+.package-full > div:first-child { display: flex; flex-direction: column; }
+.package-proof a { color: var(--accent); font-weight: 600; }
+@media (max-width: 760px) { .package-full { grid-template-columns: 1fr; } }
