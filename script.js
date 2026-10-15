@@ -1,6 +1,6 @@
 // Sections that moved from the home page to the Services page: keep old links working.
 (function () {
-  const renamed = { 'hale-house': 'great-portland-street' };
+  const renamed = { 'hale-house': 'great-portland-street', 'the-pod-pivot': 'the-podcast-pivot' };
   const moved = ['recording', 'great-portland-street', 'mobile-remote', 'post-production', 'marketing', 'youtube-clips', 'packages'];
   let id = location.hash.slice(1);
   if (renamed[id]) {
