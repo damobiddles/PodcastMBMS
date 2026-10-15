@@ -32,6 +32,7 @@ Prices are guidelines, not fixed rates.
 - [Case studies](https://mbmspodcaststudio.com/case-studies/): our own content engine, The Dokkcast for Udokk, Arco Cyber and Jiu Jitsu Fieldnotes
 - [Work with us](https://mbmspodcaststudio.com/work-with-us/): how we work, packages and prices, and how to get started
 - [Blog](https://mbmspodcaststudio.com/blog/): behind the scenes and practical podcasting advice
+- [Case study: The Dokkcast for Udokk](https://mbmspodcaststudio.com/case-studies/the-dokkcast/): an evidence-led health podcast with its own website, artwork and social media
 - [Case study: MBMS Podcast Studio](https://mbmspodcaststudio.com/case-studies/mbms-podcast-studio/): how we built our own podcast, website, brand and lead capture in 17 days
 - [Media kit](https://mbmspodcaststudio.com/media-kit/): logos, LinkedIn banners, podcast artwork, brand colours, fonts and company descriptions
 - [The full podcast package: show, website, social and email, done for you](https://mbmspodcaststudio.com/blog/full-podcast-package/)
