@@ -567,3 +567,25 @@ a:focus-visible, button:focus-visible, .btn:focus-visible, input:focus-visible, 
 .font-card { background: var(--label); border: var(--border-soft); border-radius: var(--radius); padding: 22px; }
 .font-sample { font-size: 2rem; line-height: 1.1; color: var(--ink) !important; margin: 0 0 .4em; }
 .boilerplate { margin: .6em 0 1.4em; padding: 18px 22px; background: var(--label); border: var(--border-soft); border-left: 4px solid var(--accent); border-radius: var(--radius); user-select: all; }
+
+.package-grid-3 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
+.offer-places { margin-top: .6em; display: inline-block; background: var(--ink); color: #fff !important; padding: .25em .7em; border-radius: 99px; font-size: .9rem; }
+
+/* Home: what every episode becomes */
+.episode-outputs { margin-top: 28px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; }
+.episode-outputs-label { margin: 0; font-family: 'Poppins', sans-serif; font-weight: 800; font-size: .95rem; color: var(--ink); }
+.episode-outputs ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.episode-outputs li { padding: .35em .9em; border: var(--border); border-radius: 99px; background: var(--label); font-size: .9rem; font-weight: 600; }
+.episode-outputs li:first-child { background: var(--accent); }
+
+/* Full podcast package (wide card) */
+.package-full { margin-top: 36px; padding-top: 52px; display: grid; grid-template-columns: 1fr 1.3fr; gap: 12px 40px; background: var(--dark); color: #fff; border: 1.5px solid var(--ink); box-shadow: 5px 5px 0 var(--accent); --accent-text: var(--accent); }
+.package-full h3 { color: #fff; }
+.package-full p, .package-full > div > p:not(.price) { color: var(--on-dark); }
+.package-full .price span { color: #fff; }
+.package-full .checklist li { color: #fff; }
+.package-full .checklist strong { color: #fff; }
+.package-full .btn { margin-top: 1em; align-self: flex-start; }
+.package-full > div:first-child { display: flex; flex-direction: column; }
+.package-proof a { color: var(--accent); font-weight: 600; }
+@media (max-width: 760px) { .package-full { grid-template-columns: 1fr; } }
