@@ -592,36 +592,7 @@ a:focus-visible, button:focus-visible, .btn:focus-visible, input:focus-visible, 
 .package-proof a { color: var(--accent); font-weight: 600; }
 @media (max-width: 760px) { .package-full { grid-template-columns: 1fr; } }
 
-/* Case study page */
-.cs-split { display: grid; grid-template-columns: 1fr 1.15fr; gap: 48px; align-items: center; }
-.cs-flip > figure { order: -1; }
-.cs-shot { margin: 0; }
-.cs-shot img { display: block; width: 100%; height: auto; max-height: 520px; object-fit: cover; object-position: top; border: var(--border); border-radius: var(--radius); box-shadow: 5px 5px 0 var(--accent); background: var(--label); }
-.cs-shot figcaption { margin-top: 10px; font-size: .85rem; color: var(--muted); }
-.cs-cta a:not(.btn) { color: var(--accent); }
-@media (max-width: 860px) { .cs-split { grid-template-columns: 1fr; gap: 28px; } .cs-flip > figure { order: 0; } }
-@media print {
-  @page { size: A4; margin: 0; }
-  .cs-page ~ .site-footer, body:has(.cs-page) .site-header, body:has(.cs-page) .skip-link, .cs-actions { display: none !important; }
-  body:has(.cs-page) { background: #f3f0ea; font-size: 13px; }
-  .cs-page * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  .cs-page .section { padding: 22px 0; }
-  .cs-page .page-intro { padding-top: 36px; }
-  .cs-page h1 { font-size: 2.1rem; }
-  .cs-page h2 { font-size: 1.45rem; }
-  .cs-page .container { padding-left: 36px; padding-right: 36px; }
-  .cs-page .stat-grid { grid-template-columns: repeat(4, 1fr); gap: 12px; }
-  .cs-page .stat { padding: 16px; }
-  .cs-page .stat-num { font-size: 2rem; }
-  .cs-split { grid-template-columns: 1fr 1fr !important; gap: 28px !important; }
-  .cs-flip > figure { order: -1 !important; }
-  .cs-block { break-inside: avoid; page-break-inside: avoid; }
-  .cs-shot img { max-height: 260px; box-shadow: none; }
-  .cs-page .checklist li, .cs-page .steps li { margin-bottom: .2em; }
-  .cs-cta { break-inside: avoid; }
-}
 .cs-more { margin-top: 1.4em; }
-.cs-contact { margin-top: 1.4em; font-size: .9rem; }
 
 /* About and case study hub */
 .about-person { display: grid; grid-template-columns: 220px 1fr; gap: 48px; align-items: start; }
@@ -631,8 +602,6 @@ a:focus-visible, button:focus-visible, .btn:focus-visible, input:focus-visible, 
 .case-title { font-size: 1.3rem; margin: 0 0 .3em; }
 @media (max-width: 760px) { .about-person { grid-template-columns: 1fr; gap: 20px; } .about-person .peter-photo { width: 140px; } .case-grid-2 { grid-template-columns: 1fr; } }
 .case-grid-2 .case img { height: auto; aspect-ratio: 16 / 9; }
-.cs-wide { max-width: 660px; margin: 0 auto; }
-.cs-wide img { max-height: none; }
 
 /* Case study "at a glance" landing pages: the one-page PDF as a web page */
 .ag-hero h1 { color: #fff; max-width: 20ch; }
