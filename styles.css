@@ -644,3 +644,14 @@ a:focus-visible, button:focus-visible, .btn:focus-visible, input:focus-visible, 
   .ag-split, .ag-results-grid { grid-template-columns: 1fr; gap: 28px; }
 }
 @media (max-width: 420px) { .ag-stat { padding: 14px; } .ag-stat strong { font-size: 2rem; } .ag-pair { gap: 10px; } }
+
+/* Work with us: short price list linking to the full prices */
+.price-summary { list-style: none; margin: 0 0 1.6em; padding: 0; display: grid; gap: 10px; max-width: 760px; }
+.price-summary a { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 16px 20px; background: var(--label); border: var(--border-soft); border-radius: var(--radius); text-decoration: none; }
+.price-summary a:hover { border-color: var(--accent); }
+.price-summary span { font-family: 'Poppins', sans-serif; font-weight: 700; color: var(--accent); white-space: nowrap; }
+@media (max-width: 480px) { .price-summary a { flex-direction: column; gap: 2px; } }
+
+/* Home: The Podcast Pivot as a compact showreel card */
+.pod-pivot-compact { max-width: 900px; }
+.pod-pivot-compact .pod-pivot-links { margin-top: 1em; }
