@@ -380,7 +380,8 @@ p, li { text-wrap: pretty; }
 .footer-brand p { margin: .8em 0 0; }
 .footer-brand .brand { color: #fff; }
 .footer-links { display: grid; grid-template-columns: repeat(4, auto); justify-content: end; gap: 24px 40px; }
-.footer-col { display: flex; flex-direction: column; gap: 9px; }
+.footer-col { display: flex; flex-direction: column; gap: 0; }
+.footer-col a { padding: 6px 0; }  /* taller tap targets on phones */
 .footer-heading { margin: 0 0 4px; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
 .footer-bottom { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-top: 40px; padding-top: 20px; border-top: 1px solid #2f2d37; }
 .footer-bottom p { margin: 0; }

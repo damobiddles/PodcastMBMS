@@ -54,12 +54,12 @@
         <span></span><span></span><span></span>
       </button>
       <nav id="nav-links" class="nav-links">
-        <a href="/services/">Services</a>
+        <a href="/services/">Services &amp; prices</a>
         <a href="/case-studies/">Case studies</a>
-        <a href="/#the-podcast-pivot">The Podcast Pivot</a>
+        <a href="/how-it-works/">How it works</a>
         <a href="/about/">About</a>
         <a href="/blog/">Blog</a>
-        <a href="/work-with-us/" class="btn btn-small">Work with us</a>
+        <a href="#contact" class="btn btn-small">Plan your podcast</a>
       </nav>
     </div>
   </header>
@@ -71,7 +71,7 @@
         <h1>One conversation. A month of marketing.</h1>
         <p class="section-intro">We plan, record and edit your podcast, then turn every episode into clips, posts and articles that keep working for weeks. You bring the expertise. We do the rest.</p>
         <div class="hero-actions" style="justify-content: flex-start">
-          <a href="#peter" class="btn">Talk to Damien and Peter</a>
+          <a href="#contact" class="btn">Plan your podcast</a>
           <a href="#how-it-works" class="btn btn-ghost">See how it works</a>
         </div>
       </div>
@@ -187,7 +187,7 @@
               <li>Show notes</li>
               <li>Three social clips</li>
             </ul>
-            <a href="#peter" class="btn btn-block">Talk to us about a pilot</a>
+            <a href="/work-with-us/?interest=Pilot%20episode#contact" class="btn btn-block">Talk to us about a pilot</a>
           </article>
           <article class="package package-featured">
             <span class="badge">Most complete</span>
@@ -200,7 +200,7 @@
               <li>Distribution to the major platforms</li>
               <li>Three social clips</li>
             </ul>
-            <a href="#peter" class="btn btn-block">Talk to us</a>
+            <a href="/work-with-us/?interest=Complete%20episode%20package#contact" class="btn btn-block">Talk to us</a>
           </article>
           <article class="package">
             <h3>Monthly packages</h3>
@@ -211,7 +211,7 @@
               <li>Clips and written posts every month</li>
               <li>Ongoing, consistent support</li>
             </ul>
-            <a href="#peter" class="btn btn-ghost btn-block">Plan a monthly package</a>
+            <a href="/work-with-us/?interest=Monthly%20package#contact" class="btn btn-ghost btn-block">Plan a monthly package</a>
           </article>
         </div>
         <article class="package package-full">
@@ -220,7 +220,7 @@
             <h3>The full podcast package</h3>
             <p class="price"><span>Tailored</span></p>
             <p>Everything a business needs to launch and run a podcast that markets itself. We make the show, build its home, design its look and run its channels.</p>
-            <a href="#peter" class="btn">Talk to us about the full package</a>
+            <a href="/work-with-us/?interest=The%20full%20podcast%20package#contact" class="btn">Talk to us about the full package</a>
           </div>
           <div>
             <ul class="checklist">
@@ -273,15 +273,18 @@
       </div>
     </section>
 
-    <section class="section" id="peter">
+    <section class="section" id="contact">
+      <span id="peter"></span>
       <div class="container contact">
         <div>
-          <img class="peter-photo peter-photo-sm" src="/media-kit/files/mbms-profile-400.png" width="400" height="400" loading="lazy" alt="MBMS Podcast Studio">
           <p class="eyebrow">Your next step</p>
-          <h2>Talk to Damien and Peter</h2>
-          <p>Damien founded MBMS Podcast Studio and leads every client project, with Peter alongside him. Together they’ll help you work out what a podcast could do for your business, which format suits you and how to get the most from every episode.</p>
-          <p>Send us a message and we’ll come back to you with a format and a clear price. No pressure, and no jargon.</p>
-          <p>Prefer to talk? <a class="text-link" href="/#book">Book a call</a>.</p>
+          <h2>Plan your podcast</h2>
+          <p>Tell us what you’d like your podcast to do for your business, and we’ll come back with a format and a clear price. No pressure, and no jargon.</p>
+          <p>Damien leads every client project, so your first conversation is with him. <a class="text-link" href="/how-it-works/">See how it works&nbsp;&rarr;</a></p>
+          <div class="book-call" id="book">
+            <p><strong>Prefer to talk?</strong> Choose a time that suits you and book a call online.</p>
+            <a href="https://mbmspodcaststudio.simplybook.me/v2/" class="btn btn-ghost" target="_blank" rel="noopener">Book a call</a>
+          </div>
         </div>
         <form class="contact-form" id="contact-form" method="POST" action="https://api.web3forms.com/submit">
           <input type="hidden" name="access_key" value="95f29508-982a-4ad9-98e0-50430e1ecd37">
@@ -292,13 +295,17 @@
           <p class="hp-field" aria-hidden="true"><label>Leave this empty<input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></label></p>
           <label>Name<input type="text" name="name" required autocomplete="name"></label>
           <label>Email<input type="email" name="email" required autocomplete="email"></label>
-          <label>Company<input type="text" name="company" autocomplete="organization"></label>
+          <label>Company (optional)<input type="text" name="company" autocomplete="organization"></label>
           <label>I'm interested in
             <select name="interest">
               <option>Pilot episode</option>
               <option>Complete episode package</option>
               <option>Monthly package</option>
-              <option>Clips from an existing podcast or webinar</option>
+              <option>The full podcast package</option>
+              <option>Recording session</option>
+              <option>Post-production</option>
+              <option>Clips from my YouTube podcast</option>
+              <option>Local offer (within 10 miles of Marlow)</option>
               <option>Not sure yet</option>
             </select>
           </label>
@@ -346,9 +353,9 @@
           <p class="footer-heading">Company</p>
           <a href="/about/">About</a>
           <a href="/work-with-us/">Work with us</a>
-          <a href="/blog/what-working-with-us-looks-like/">How we work</a>
+          <a href="/how-it-works/">How it works</a>
           <a href="/#faq">FAQ</a>
-          <a href="/#contact">Contact</a>
+          <a href="/work-with-us/#contact">Contact</a>
         </div>
       </nav>
     </div>

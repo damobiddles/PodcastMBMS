@@ -137,3 +137,16 @@ if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     v.controls = true;
   });
 }
+
+// The enquiry form and call booking now live on Work with us: send old home-page links there.
+if ((location.pathname === '/' || location.pathname === '/index.html') && ['#contact', '#book'].includes(location.hash)) {
+  location.replace('/work-with-us/' + location.hash);
+}
+
+// Package buttons link with ?interest=…, so pre-select it in "I'm interested in".
+const interest = new URLSearchParams(location.search).get('interest');
+const interestSelect = document.querySelector('#contact-form select[name="interest"]');
+if (interest && interestSelect) {
+  const match = [...interestSelect.options].find(o => o.text === interest);
+  if (match) interestSelect.value = match.value;
+}

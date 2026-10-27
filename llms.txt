@@ -26,17 +26,17 @@ Prices are guidelines, not fixed rates.
 
 ## Pages
 
-- [Home](https://mbmspodcaststudio.com/): overview, Great Portland Street Studio, case study, The Podcast Pivot, about the studio, FAQ and contact
+- [Home](https://mbmspodcaststudio.com/): overview, Great Portland Street Studio, case study, The Podcast Pivot, about the studio, FAQ
 - [Services and prices](https://mbmspodcaststudio.com/services/): recording, Great Portland Street Studio, mobile and remote recording, post-production, marketing, YouTube clips and packages
 - [About](https://mbmspodcaststudio.com/about/): the team behind MBMS Podcast Studio, founded by Damien Bidmead
 - [Case studies](https://mbmspodcaststudio.com/case-studies/): our own content engine, The Dokkcast for Udokk, Arco Cyber and Jiu Jitsu Fieldnotes
-- [Work with us](https://mbmspodcaststudio.com/work-with-us/): how we work, packages and prices, and how to get started
+- [How it works](https://mbmspodcaststudio.com/how-it-works/): the first chat, five steps from planning to launch, time needed and ways to start
+- [Work with us](https://mbmspodcaststudio.com/work-with-us/): what you get, case studies, packages, the enquiry form and call booking
 - [Blog](https://mbmspodcaststudio.com/blog/): behind the scenes and practical podcasting advice
 - [Case study: The Dokkcast for Udokk](https://mbmspodcaststudio.com/case-studies/the-dokkcast/): an evidence-led health podcast with its own website, artwork and social media
 - [Case study: MBMS Podcast Studio](https://mbmspodcaststudio.com/case-studies/mbms-podcast-studio/): how we built our own podcast, website, brand and lead capture in 17 days
 - [Media kit](https://mbmspodcaststudio.com/media-kit/): logos, LinkedIn banners, podcast artwork, brand colours, fonts and company descriptions
 - [The full podcast package: show, website, social and email, done for you](https://mbmspodcaststudio.com/blog/full-podcast-package/)
-- [From first chat to first episode: what working with us looks like](https://mbmspodcaststudio.com/blog/what-working-with-us-looks-like/)
 - [How we use Riverside to record remote podcast guests](https://mbmspodcaststudio.com/blog/how-we-use-riverside/)
 - [We bring the studio to you: recording a podcast at your office](https://mbmspodcaststudio.com/blog/podcast-recording-at-your-office/)
 - [How to find the best clips in any podcast episode (free checklist)](https://mbmspodcaststudio.com/blog/how-to-find-the-best-podcast-clips/)
@@ -56,4 +56,4 @@ Prices are guidelines, not fixed rates.
 
 Email: meadowbms@gmail.com
 Book a call: https://mbmspodcaststudio.simplybook.me/v2/
-Or use the contact form at https://mbmspodcaststudio.com/#contact
+Or use the enquiry form at https://mbmspodcaststudio.com/work-with-us/#contact
