@@ -303,6 +303,8 @@ p, li { text-wrap: pretty; }
 .contact > * { min-width: 0; }
 .contact-form select { width: 100%; min-width: 0; }
 .hp-field { position: absolute; left: -9999px; }
+.form-privacy { margin: 0; font-size: .85rem; color: var(--muted); }
+.form-privacy a { color: inherit; text-decoration: underline; }
 :is(.faq, .post-faq) details a { color: var(--accent-text); font-weight: 600; }
 .call-picker { border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px 16px; margin: 0; min-width: 0; display: grid; gap: 10px; }
 .call-picker legend { font-weight: 600; font-size: .9rem; padding: 0 6px; }
