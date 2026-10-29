@@ -49,7 +49,9 @@ contactForm?.addEventListener('submit', async (e) => {
   const label = button.textContent;
   const data = new FormData(contactForm);
   const page = data.get('page') ? `${data.get('page')}: ` : '';
-  data.set('subject', `${page}Podcast enquiry: ${data.get('interest')} (${data.get('name')})`);
+  const call = data.get('call_date') && data.get('call_time') ? `Call request ${callLabel(data.get('call_date'))}, ${data.get('call_time')}: ` : '';
+  if (call) data.set('call_date', callLabel(data.get('call_date')));
+  data.set('subject', `${call}${page}Podcast enquiry: ${data.get('interest')} (${data.get('name')})`);
   data.delete('redirect');
   button.disabled = true;
   button.textContent = 'Sending…';
@@ -146,4 +148,31 @@ const interestSelect = document.querySelector('#contact-form select[name="intere
 if (interest && interestSelect) {
   const match = [...interestSelect.options].find(o => o.text === interest);
   if (match) interestSelect.value = match.value;
+}
+
+// Call picker on Work with us: weekdays only, from tomorrow up to 8 weeks ahead.
+// The chosen day and time go out with the enquiry, and we confirm the call by email.
+function callLabel(value) {
+  const [y, m, d] = value.split('-').map(Number);
+  return new Date(y, m - 1, d).toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
+}
+const callDate = document.getElementById('call-date');
+const callTime = document.getElementById('call-time');
+if (callDate && callTime) {
+  const iso = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+  const day = new Date();
+  day.setDate(day.getDate() + 1);
+  callDate.min = iso(day);
+  day.setDate(day.getDate() + 55);
+  callDate.max = iso(day);
+  const check = () => {
+    const [y, m, d] = callDate.value.split('-').map(Number);
+    const weekend = callDate.value && [0, 6].includes(new Date(y, m - 1, d).getDay());
+    callDate.setCustomValidity(weekend ? 'Please choose a weekday.' : '');
+    callDate.required = Boolean(callTime.value);
+    callTime.required = Boolean(callDate.value);
+  };
+  callDate.addEventListener('change', check);
+  callTime.addEventListener('change', check);
+  callDate.closest('form')?.addEventListener('reset', () => setTimeout(check));
 }
