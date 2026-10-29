@@ -65,7 +65,7 @@ contactForm?.addEventListener('submit', async (e) => {
     if (!res.ok || !json.success) throw new Error(json.message || res.status);
     contactForm.reset();
     status.className = 'form-status form-status-ok';
-    status.textContent = "Thanks, your enquiry has been sent. We'll be in touch soon.";
+    status.textContent = "Thanks, your enquiry has been sent. We'll reply within two working days.";
     button.textContent = 'Sent';
   } catch {
     status.className = 'form-status form-status-error';
