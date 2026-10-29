@@ -36,6 +36,7 @@ Prices are guidelines, not fixed rates.
 - [Case study: The Dokkcast for Udokk](https://mbmspodcaststudio.com/case-studies/the-dokkcast/): an evidence-led health podcast with its own website, artwork and social media
 - [Case study: MBMS Podcast Studio](https://mbmspodcaststudio.com/case-studies/mbms-podcast-studio/): how we built our own podcast, website, brand and lead capture in 17 days
 - [Media kit](https://mbmspodcaststudio.com/media-kit/): logos, LinkedIn banners, podcast artwork, brand colours, fonts and company descriptions
+- [One episode in, a month of marketing out: how we use Offcuts](https://mbmspodcaststudio.com/blog/offcuts-month-of-marketing/)
 - [The full podcast package: show, website, social and email, done for you](https://mbmspodcaststudio.com/blog/full-podcast-package/)
 - [How we use Riverside to record remote podcast guests](https://mbmspodcaststudio.com/blog/how-we-use-riverside/)
 - [We bring the studio to you: recording a podcast at your office](https://mbmspodcaststudio.com/blog/podcast-recording-at-your-office/)
@@ -54,6 +55,5 @@ Prices are guidelines, not fixed rates.
 
 ## Contact
 
-Email: meadowbms@gmail.com
 Book a call: pick a weekday and time in the enquiry form, and we confirm by email
 Or use the enquiry form at https://mbmspodcaststudio.com/work-with-us/#contact
