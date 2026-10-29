@@ -12,9 +12,6 @@
   }
 })();
 
-// Replace with the address enquiries should go to.
-const CONTACT_EMAIL = 'meadowbms@gmail.com';
-
 const year = document.getElementById('year');
 if (year) year.textContent = new Date().getFullYear();
 
@@ -42,7 +39,7 @@ links.querySelectorAll('a').forEach((a) =>
   })
 );
 
-// Sends the contact form to Web3Forms, which emails it to CONTACT_EMAIL, without leaving the page.
+// Sends the contact form to Web3Forms, which emails it to us, without leaving the page.
 // Without JavaScript, the form still posts normally and Web3Forms redirects to /thank-you/.
 const contactForm = document.getElementById('contact-form');
 contactForm?.addEventListener('submit', async (e) => {
@@ -70,7 +67,7 @@ contactForm?.addEventListener('submit', async (e) => {
     button.textContent = 'Sent';
   } catch {
     status.className = 'form-status form-status-error';
-    status.innerHTML = `Sorry, that didn't send. Please email us at <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`;
+    status.textContent = "Sorry, that didn't send. Please check your connection and try again.";
     button.disabled = false;
     button.textContent = label;
   }
@@ -98,7 +95,7 @@ waitlistForm?.addEventListener('submit', async (e) => {
     button.textContent = 'Joined';
   } catch {
     status.className = 'form-status form-status-error';
-    status.innerHTML = `Sorry, that didn't go through. Please email us at <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`;
+    status.textContent = "Sorry, that didn't go through. Please check your connection and try again.";
     button.disabled = false;
     button.textContent = 'Join the waitlist';
   }
