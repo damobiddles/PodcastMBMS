@@ -48,6 +48,7 @@ Prices are guidelines, not fixed rates.
 - [Blog](https://mbmspodcaststudio.com/blog/): behind the scenes and practical podcasting advice
 - [Case study: The Dokkcast for Udokk](https://mbmspodcaststudio.com/case-studies/the-dokkcast/): an evidence-led health podcast with its own website, artwork and social media
 - [Case study: MBMS](https://mbmspodcaststudio.com/case-studies/mbms-podcast-studio/): how we built our own podcast, website, brand and lead capture in 17 days
+- [Offcuts and Posting Desk](https://mbmspodcaststudio.com/case-studies/offcuts/): our own tools for turning one episode into a month of posts, tailored to each show and checked by a person
 - [Media kit](https://mbmspodcaststudio.com/media-kit/): logos, LinkedIn banners, podcast artwork, brand colours, fonts and company descriptions
 - [Privacy notice](https://mbmspodcaststudio.com/privacy/): what personal information we collect through the website and how we use it
 - [Website terms of use](https://mbmspodcaststudio.com/terms/): terms for using the website, guide prices and call requests
