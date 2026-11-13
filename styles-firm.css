@@ -61,3 +61,23 @@
 .plan-map li { background: var(--bg); border: var(--border-soft); border-radius: 999px; padding: .3em .85em; font-size: .9rem; color: var(--ink); }
 .plan-map li:first-child { background: var(--dark); color: #fff; border-color: var(--dark); font-weight: 600; }
 @media (max-width: 760px) { .plan { padding: 22px 18px; } .plan-grid { grid-template-columns: 1fr; } }
+
+/* Homepage: "What do you need?" picker */
+.need-picker { margin: 0 0 .8em; }
+.need-picker a { font-size: .95rem; }
+.need-picker-more { color: var(--muted); margin: 0 0 2em; }
+
+/* Brand health check */
+.check-list { list-style: none; margin: 1.4em 0 0; padding: 0; display: grid; gap: 14px; counter-reset: q; }
+.check-item { counter-increment: q; background: var(--label); border: var(--border-soft); border-radius: var(--radius); padding: 18px 20px; margin: 0; }
+.check-item legend { float: left; width: 100%; font-weight: 600; padding: 0; margin-bottom: .6em; }
+.check-options { clear: both; }
+.check-item legend::before { content: counter(q) ". "; color: var(--accent-text); }
+.check-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.check-options label { display: inline-flex; align-items: center; gap: 6px; padding: .4em .9em; border: var(--border-soft); border-radius: 999px; background: var(--bg); cursor: pointer; font-size: .95rem; }
+.check-options input { accent-color: var(--ink); margin: 0; }
+.check-options label:has(input:checked) { border-color: var(--ink); background: var(--accent); color: var(--accent-ink); }
+.check-result { margin-top: 1.6em; padding: 24px; background: var(--label); border: var(--border); border-radius: var(--radius); box-shadow: 5px 5px 0 var(--accent); }
+.check-result[hidden] { display: none; }
+.check-score { font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 2rem; margin: 0; }
+.check-result ul { padding-left: 1.1em; }
