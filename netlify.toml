@@ -19,8 +19,8 @@
   [headers.values]
     Cache-Control = "public, max-age=2592000"
 
-# Unlisted portfolio page: keep it out of search results (shared by link only)
+# Unlisted portfolio page (/damien/): keep it out of search results (shared by link only)
 [[headers]]
-  for = "/portfolio/*"
+  for = "/damien/*"
   [headers.values]
     X-Robots-Tag = "noindex, nofollow"
