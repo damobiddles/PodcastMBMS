@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
   <rect width="800" height="450" fill="#e9e4dc"/>
-  <polygon points="220,250 680,236 450,440" fill="#ff5a36"/>
+  <polygon points="220,250 680,236 450,440" fill="#FFC93C"/>
   <g transform="rotate(-6 390 240)">
     <rect x="200" y="206" width="380" height="40" rx="8" fill="#17161c"/>
-    <rect x="232" y="206" width="22" height="40" fill="#ff5a36"/>
+    <rect x="232" y="206" width="22" height="40" fill="#FFC93C"/>
     <rect x="252" y="206" width="6" height="40" fill="#17161c"/>
     <g transform="rotate(28 370 240)"><rect x="352" y="236" width="38" height="120" rx="6" fill="#17161c"/></g>
     <g transform="rotate(-24 410 240)"><rect x="392" y="236" width="38" height="120" rx="6" fill="#17161c"/></g>
