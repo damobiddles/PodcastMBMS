@@ -52,6 +52,7 @@ Prices are guidelines, not fixed rates.
 - [Brand kit](https://mbmspodcaststudio.com/media-kit/): logos, brand colours with hex values, fonts, label-box and graphic rules, voice and naming, LinkedIn banners, profile pictures, podcast artwork and company descriptions
 - [Privacy notice](https://mbmspodcaststudio.com/privacy/): what personal information we collect through the website and how we use it
 - [Website terms of use](https://mbmspodcaststudio.com/terms/): terms for using the website, guide prices and call requests
+- [When AI makes the content, real conversations stand out](https://mbmspodcaststudio.com/blog/real-conversations-stand-out/)
 - [One episode in, a month of marketing out: how we use Offcuts](https://mbmspodcaststudio.com/blog/offcuts-month-of-marketing/)
 - [The full podcast package: show, website, social and email, done for you](https://mbmspodcaststudio.com/blog/full-podcast-package/)
 - [How we use Riverside to record remote podcast guests](https://mbmspodcaststudio.com/blog/how-we-use-riverside/)
