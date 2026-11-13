@@ -95,17 +95,7 @@ p, li { text-wrap: pretty; }
 .hero-inner { max-width: 880px; text-align: center; }
 .lede { font-size: 1.15rem; color: var(--muted); max-width: 640px; margin: 0 auto 2em; }
 .hero-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-.waveform { display: flex; align-items: center; justify-content: center; gap: 6px; height: 80px; margin-top: 56px; }
-.waveform span {
-  width: 6px; border-radius: 3px; background: var(--accent); opacity: .85;
-  animation: wave 1.4s ease-in-out infinite;
-}
-.waveform span:nth-child(3n) { animation-delay: -.3s; background: var(--ink); }
-.waveform span:nth-child(3n+1) { animation-delay: -.7s; }
-.waveform span:nth-child(4n) { animation-delay: -1.1s; }
-@keyframes wave { 0%, 100% { height: 14px; } 50% { height: 72px; } }
 @media (prefers-reduced-motion: reduce) {
-  .waveform span { animation: none; height: 40px; }
   html { scroll-behavior: auto; }
 }
 
@@ -440,17 +430,8 @@ p, li { text-wrap: pretty; }
 }
 
 
-/* Microphones: a light, decorative sprinkle */
-.mic { display: block; height: auto; pointer-events: none; user-select: none; }
 .hero-inner { position: relative; z-index: 1; }
-.mic-about { width: 150px; margin-top: 2em; transform: rotate(-6deg); }
 .services-cta { position: relative; overflow: hidden; }
-.mic-cta { position: absolute; width: 150px; left: 24px; bottom: -18px; transform: rotate(-8deg); opacity: .9; }
-.mic-page { width: 130px; margin-bottom: 1.2em; transform: rotate(-6deg); }
-@media (max-width: 860px) {
-  .mic-about { display: none; }
-  .mic-cta { width: 100px; left: 8px; }
-}
 
 
 /* ---------- Studio Zine: paper, label boxes and light outlines ---------- */
@@ -500,7 +481,6 @@ h3 { font-weight: 700; }
 .hero h1 .lbl-2 { background: var(--accent); color: var(--accent-ink); transform: rotate(1.2deg) translateX(.6em); }
 .hero h1 .lbl-3 { transform: rotate(-.8deg) translateX(-.4em); }
 .hero h1::before { content: ''; position: absolute; left: 50%; top: 42%; width: min(70%, 520px); height: 1.6em; background: var(--accent); clip-path: polygon(0 0, 100% 0, 50% 100%); transform: translateX(-46%); z-index: 0; opacity: .9; }
-.hero .waveform { position: relative; z-index: 1; }
 @media (max-width: 860px) {
   .hero h1 .lbl-2, .hero h1 .lbl-3 { transform: rotate(-1deg); }
 }
