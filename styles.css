@@ -356,6 +356,7 @@ p, li { text-wrap: pretty; }
 .post-card-link { display: block; text-decoration: none; color: inherit; }
 .post-card img { background: var(--dark); display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
 .post-card img[hidden] { display: none; }
+.post-card img[src*="/share/"] { object-position: left center; } /* keep the title side of share images in view when cropped */
 .post-card-body { padding: 24px; }
 .post-card h2 { font-size: 1.3rem; }
 .post-card-body > p:not(.post-meta) { color: var(--muted); }
