@@ -47,3 +47,17 @@
 .principle { background: var(--label); border: var(--border-soft); border-radius: var(--radius); padding: 24px; }
 .principle h3 { margin: 0 0 .35em; font-size: 1.15rem; }
 .principle p { margin: 0; color: var(--muted); }
+
+/* Illustrative plans */
+.plan { background: var(--label); border: var(--border); border-radius: var(--radius); padding: 32px; margin-top: 1.6em; scroll-margin-top: 90px; }
+.plan > h2 { margin-top: 0; }
+.plan-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 40px; margin-top: 1.2em; }
+.plan-grid h3 { font-size: 1.1rem; margin: 0 0 .4em; }
+.plan-grid p, .plan-grid li { color: var(--muted); }
+.plan-phases { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.plan-phases li { border-left: 3px solid var(--accent); padding-left: 14px; }
+.plan-phases strong { display: block; color: var(--ink); }
+.plan-map { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: .4em 0 0; }
+.plan-map li { background: var(--bg); border: var(--border-soft); border-radius: 999px; padding: .3em .85em; font-size: .9rem; color: var(--ink); }
+.plan-map li:first-child { background: var(--dark); color: #fff; border-color: var(--dark); font-weight: 600; }
+@media (max-width: 760px) { .plan { padding: 22px 18px; } .plan-grid { grid-template-columns: 1fr; } }
