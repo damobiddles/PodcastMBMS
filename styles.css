@@ -598,6 +598,23 @@ a:focus-visible, button:focus-visible, .btn:focus-visible, input:focus-visible, 
 .font-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 20px; margin-top: 1em; }
 .font-card { background: var(--label); border: var(--border-soft); border-radius: var(--radius); padding: 22px; }
 .font-sample { font-size: 2rem; line-height: 1.1; color: var(--ink) !important; margin: 0 0 .4em; }
+/* Brand kit: graphic element demos, colour table and voice lines */
+.kit-jump { margin-top: 1.6em; }
+.kit-table { min-width: 480px; }
+.kit-note { margin-top: 1em; }
+.kit-elements { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 20px; margin: 1.6em 0 0; }
+.kit-el { margin: 0; background: var(--label); border: var(--border-soft); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; }
+.kit-el-demo { min-height: 190px; padding: 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; background: var(--bg); border-bottom: var(--border-soft); }
+.kit-el:last-child .kit-el-demo { flex-direction: row; flex-wrap: wrap; }
+.kit-el figcaption { padding: 16px 20px 20px; color: var(--muted); font-size: .95rem; }
+.kit-el figcaption strong { color: var(--ink); }
+.kit-lbl { display: inline-block; max-width: 100%; background: var(--label); border: 2.5px solid var(--ink); padding: .1em .35em .16em; font-family: 'Poppins', sans-serif; font-weight: 800; font-size: clamp(1.05rem, 4.5vw, 1.35rem); line-height: 1.1; letter-spacing: -.02em; color: var(--ink); transform: rotate(-1.5deg); }
+.kit-lbl-sun { background: var(--accent); color: var(--accent-ink); transform: rotate(1.2deg); }
+.kit-dot { width: 64px; height: 64px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 18px color-mix(in srgb, var(--accent) 28%, transparent); }
+.kit-tri { width: 170px; height: 100px; background: var(--accent); clip-path: polygon(0 0, 100% 0, 50% 100%); }
+.kit-chip { display: inline-block; padding: .3em .9em; border: var(--border); border-radius: 99px; background: var(--label); font-weight: 600; font-size: .88rem; }
+.kit-lines { list-style: none; padding: 0; margin: .6em 0 0; display: grid; gap: 10px; }
+.kit-lines li { background: var(--label); border: var(--border-soft); border-left: 4px solid var(--accent); border-radius: var(--radius); padding: 12px 18px; }
 .boilerplate { margin: .6em 0 1.4em; padding: 18px 22px; background: var(--label); border: var(--border-soft); border-left: 4px solid var(--accent); border-radius: var(--radius); user-select: all; }
 
 .package-grid-3 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
