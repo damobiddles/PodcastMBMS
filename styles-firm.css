@@ -76,7 +76,8 @@
 @media (max-width: 960px) { .team-grid { grid-template-columns: 1fr; max-width: 640px; } }
 
 /* About: sectors */
-.sectors { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 20px; margin-top: 1.4em; }
+.sectors { display: grid; grid-template-columns: 1fr; gap: 20px; margin-top: 1.4em; }
+@media (min-width: 720px) { .sectors { grid-template-columns: repeat(3, 1fr); } }
 .sector { background: var(--label); border: var(--border-soft); border-radius: var(--radius); padding: 24px; }
 .sector h3 { margin: 0 0 .5em; font-size: 1.15rem; }
 .sector ul { margin: 0; padding-left: 1.1em; color: var(--muted); }
