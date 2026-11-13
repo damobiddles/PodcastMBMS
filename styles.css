@@ -688,3 +688,9 @@ a:focus-visible, button:focus-visible, .btn:focus-visible, input:focus-visible, 
 /* Home: content-engine intro above the two step cards */
 .levels { padding-top: 90px; }
 .levels > .container:first-child h2 { max-width: 22ch; }
+
+/* Service pages: experience and pricing panels */
+.service-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.service-facts .download-box { display: block; margin: 0; }
+.service-facts .download-box p:not(.eyebrow):not(.wwu-big) { color: var(--ink); }
+@media (max-width: 760px) { .service-facts { grid-template-columns: 1fr; } }
