@@ -1,26 +1,37 @@
 :root {
-  /* Studio Zine palette, dark mode: ink background, paper text and signal orange.
-     Every text/background pair meets WCAG AA. */
-  color-scheme: dark;
-  --bg: #17161c;          /* ink */
-  --bg-alt: #1e1d24;      /* lifted ink for alternate sections */
-  --label: #24222b;       /* label boxes and cards */
-  --ink: #f3f0ea;         /* paper: main text and outlines */
-  --muted: #aaa5b0;
-  --line: #34323c;
-  --accent: #ff5a36;      /* signal orange: buttons, highlights, dark sections */
+  /* Studio Zine palette, light mode: meadow green background, ink text and sunflower yellow,
+     with ink sections for contrast. Every text/background pair meets WCAG AA. */
+  color-scheme: light;
+  --bg: #eef3ec;          /* meadow: page background */
+  --bg-alt: #e1eadd;      /* deeper meadow for alternate sections */
+  --label: #fbfdfa;       /* label boxes and cards */
+  --ink: #17161c;         /* ink: main text and outlines */
+  --muted: #5c5866;
+  --line: #cfdcc9;
+  --accent: #ffc93c;      /* sunflower: buttons, highlights */
   --accent-ink: #17161c;  /* text on orange */
-  /* Orange for small text and links (6:1 on ink) */
-  --accent-strong: #ff5a36;
-  --accent-text: var(--accent);
-  --dark: #0e0d12;        /* deepest ink: feature sections, footer, CTAs */
+  --accent-strong: #ffc93c;
+  /* Deep gold for small text and links on light backgrounds (5:1) */
+  --accent-text: #8a5300;
+  --dark: #17161c;        /* ink: feature sections, footer, CTAs */
   --dark-soft: #24222b;
   --on-dark: #c9c6d1;     /* body text on dark sections */
   --on-dark-muted: #a9a6b2;
   --border: 1.5px solid var(--ink);          /* buttons, logo, label boxes */
-  --border-soft: 1px solid #3a3842;          /* cards, panels, images */
+  --border-soft: 1px solid #cfdcc9;          /* cards, panels, images */
   --radius: 12px;
   --max: 1120px;
+}
+
+/* Ink sections keep the dark-mode values, so cards and buttons inside them still read */
+.section-dark, .site-footer, .post-cta, .package-full, .level-card-accent {
+  color-scheme: dark;
+  --ink: #f3f0ea;
+  --label: #24222b;
+  --muted: #aaa5b0;
+  --line: #34323c;
+  --border-soft: 1px solid #3a3842;
+  --accent-text: var(--accent);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -56,7 +67,7 @@ p, li { text-wrap: pretty; }
   background: var(--accent-strong); color: var(--accent-ink); font-weight: 600; text-decoration: none;
   font: inherit; font-weight: 600; cursor: pointer; transition: transform .15s, box-shadow .15s;
 }
-.btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(255, 90, 54, .3); }
+.btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(255, 201, 60, .3); }
 .btn-ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
 .btn-ghost:hover { box-shadow: 0 8px 20px rgba(0, 0, 0, .1); }
 .section-dark .btn-ghost, .post-cta .btn-ghost { color: #fff; border-color: rgba(255, 255, 255, .7); }
@@ -67,12 +78,12 @@ p, li { text-wrap: pretty; }
 /* Header */
 .site-header {
   position: sticky; top: 0; z-index: 10;
-  background: rgba(23, 22, 28, .94); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  background: rgba(238, 243, 236, .94); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
 }
 .nav { display: flex; align-items: center; justify-content: space-between; height: 68px; }
 .brand { display: flex; align-items: center; gap: .6em; font-family: 'Poppins', sans-serif; font-weight: 700; text-decoration: none; font-size: 1.1rem; white-space: nowrap; }
-.brand-mark { width: 22px; height: 22px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 5px rgba(255, 90, 54, .2); }
+.brand-mark { width: 22px; height: 22px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 5px rgba(255, 201, 60, .2); }
 .nav-links { display: flex; align-items: center; gap: 1.6em; }
 .nav-links a { text-decoration: none; font-weight: 500; font-size: .95rem; white-space: nowrap; }
 .nav-links a:not(.btn):hover { color: var(--accent-text); }
@@ -108,7 +119,7 @@ p, li { text-wrap: pretty; }
 .level-card { background: var(--label); border: 1px solid var(--line); border-radius: var(--radius); padding: 32px; }
 .level-card-accent { background: var(--dark); color: #fff; border-color: var(--dark); }
 .level-card-accent p { color: var(--on-dark); }
-.level-tag { display: inline-block; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; padding: .3em .8em; border-radius: 999px; background: rgba(255, 90, 54, .12); color: var(--accent-text); margin-bottom: 1em; }
+.level-tag { display: inline-block; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; padding: .3em .8em; border-radius: 999px; background: rgba(255, 201, 60, .12); color: var(--accent-text); margin-bottom: 1em; }
 
 /* Sections */
 .section { padding: 90px 0; }
@@ -187,16 +198,16 @@ p, li { text-wrap: pretty; }
 .clip { margin: 0; min-width: 0; display: grid; gap: 12px; }
 .clip-screen {
   position: relative; overflow: hidden; border-radius: 22px; border: 6px solid #2f2d37;
-  background: radial-gradient(120% 80% at 30% 20%, #4a2a26 0%, #221f28 55%, var(--dark) 100%);
+  background: radial-gradient(120% 80% at 30% 20%, #3d3a22 0%, #221f28 55%, var(--dark) 100%);
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 44px 16px 56px;
 }
 .clip-tall .clip-screen { aspect-ratio: 9 / 16; }
 .clip-square .clip-screen { aspect-ratio: 1 / 1; border-radius: 14px; }
-.clip-row .clip:nth-child(2) .clip-screen { background: radial-gradient(120% 80% at 70% 25%, #5a2f22 0%, #26202a 55%, var(--dark) 100%); }
+.clip-row .clip:nth-child(2) .clip-screen { background: radial-gradient(120% 80% at 70% 25%, #45401f 0%, #26202a 55%, var(--dark) 100%); }
 .clip-row .clip:nth-child(3) .clip-screen { background: radial-gradient(120% 80% at 50% 10%, #3b2d3f 0%, #221f28 55%, var(--dark) 100%); }
 .clip-platform { position: absolute; top: 14px; left: 14px; font-size: .7rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #fff; background: rgba(255, 255, 255, .12); padding: .3em .7em; border-radius: 999px; }
 .clip-speakers { display: flex; gap: 10px; }
-.clip-speakers span { width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(160deg, #ff8a6b, var(--accent)); box-shadow: 0 0 0 3px rgba(255, 255, 255, .15); }
+.clip-speakers span { width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(160deg, #ffe08a, var(--accent)); box-shadow: 0 0 0 3px rgba(255, 255, 255, .15); }
 .clip-speakers span + span { background: linear-gradient(160deg, #cfc9d8, #8e889a); }
 .clip-wave { display: flex; align-items: center; gap: 3px; height: 32px; }
 .clip-wave i { width: 4px; border-radius: 2px; background: var(--label); opacity: .85; animation: wave-sm 1.2s ease-in-out infinite; }
@@ -264,7 +275,7 @@ p, li { text-wrap: pretty; }
 .package { position: relative; background: var(--label); border: 1px solid var(--line); border-radius: var(--radius); padding: 36px; display: flex; flex-direction: column; }
 .package .btn { margin-top: auto; }
 .package > p:not(.price) { color: var(--muted); }
-.package-featured { border: 2px solid var(--accent-strong); box-shadow: 0 24px 48px rgba(255, 90, 54, .12); }
+.package-featured { border: 2px solid var(--accent-strong); box-shadow: 0 24px 48px rgba(255, 201, 60, .12); }
 .badge { position: absolute; top: -13px; left: 36px; background: var(--accent-strong); color: #fff; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; padding: .35em .9em; border-radius: 999px; }
 .note a { color: var(--accent-text); font-weight: 600; }
 .note { margin-top: 2.5em; padding: 20px 24px; border-left: 4px solid var(--accent); background: var(--bg); border-radius: 0 12px 12px 0; color: var(--muted); }
@@ -443,7 +454,7 @@ p, li { text-wrap: pretty; }
 
 
 /* ---------- Studio Zine: paper, label boxes and light outlines ---------- */
-body { background: var(--bg) url("images/paper-noise.svg"); }
+body { background: var(--bg); }
 h1, h2 { font-weight: 800; letter-spacing: -0.02em; }
 h3 { font-weight: 700; }
 .section-alt { background-color: var(--bg-alt); }
@@ -451,7 +462,7 @@ h3 { font-weight: 700; }
 
 /* Logo: a tilted label box with the record dot */
 .brand { font-weight: 800; background: var(--label); border: var(--border); padding: .28em .7em .32em; transform: rotate(-1.5deg); color: var(--ink); }
-.brand-mark { width: 16px; height: 16px; box-shadow: 0 0 0 4px rgba(255, 90, 54, .28); }
+.brand-mark { width: 16px; height: 16px; box-shadow: 0 0 0 4px rgba(255, 201, 60, .28); }
 .footer-brand .brand { color: var(--ink); background: var(--label); border-color: var(--ink); }
 
 /* Buttons: orange with an ink outline, hard shadow on hover */
@@ -476,7 +487,7 @@ h3 { font-weight: 700; }
 .jump-links a:hover { border-color: var(--ink); background: var(--accent); color: var(--accent-ink); }
 .level-tag { background: var(--accent); color: var(--accent-ink); border: 0; border-radius: 0; }
 .level-card-accent .level-tag { border-color: var(--accent); }
-.contact-form input, .contact-form select, .contact-form textarea { border: 1px solid #4a4752; border-radius: 8px; background: var(--bg); }
+.contact-form input, .contact-form select, .contact-form textarea { border: 1px solid #8a8592; border-radius: 8px; background: #fff; color: var(--ink); }
 .steps li::before { background: var(--accent); color: var(--accent-ink); }
 .note { border-left-color: var(--accent); background: var(--label); border-radius: 0 var(--radius) var(--radius) 0; }
 .pull-quote { font-weight: 800; }
@@ -497,7 +508,7 @@ h3 { font-weight: 700; }
 /* Keyboard access */
 .skip-link { position: absolute; left: 12px; top: -60px; z-index: 100; background: var(--accent); color: var(--accent-ink); padding: .6em 1em; border-radius: 8px; font-weight: 600; text-decoration: none; }
 .skip-link:focus { top: 12px; }
-a:focus-visible, button:focus-visible, .btn:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid var(--accent-strong); outline-offset: 3px; }
+a:focus-visible, button:focus-visible, .btn:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid var(--accent-text); outline-offset: 3px; }
 .section-dark a:focus-visible, .site-footer a:focus-visible, .post-cta a:focus-visible { outline-color: var(--accent); }
 
 /* Playbook waitlist */
@@ -620,7 +631,7 @@ a:focus-visible, button:focus-visible, .btn:focus-visible, input:focus-visible, 
 .ag-stats-wrap { margin-top: -36px; position: relative; }
 .ag-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
 .ag-stat { background: var(--label); border: var(--border); box-shadow: 4px 4px 0 var(--accent); padding: 18px 20px; }
-.ag-stat strong { display: block; font: 800 2.4rem/1 Poppins, sans-serif; color: var(--accent); margin-bottom: 8px; }
+.ag-stat strong { display: block; font: 800 2.4rem/1 Poppins, sans-serif; color: var(--accent-text); margin-bottom: 8px; }
 .ag-stat span { font-size: .92rem; line-height: 1.4; display: block; }
 .ag-main { padding-top: 56px; }
 .ag-split { display: grid; grid-template-columns: 1.15fr 1fr; gap: 48px; align-items: start; }
@@ -657,7 +668,7 @@ a:focus-visible, button:focus-visible, .btn:focus-visible, input:focus-visible, 
 .price-summary { list-style: none; margin: 0 0 1.6em; padding: 0; display: grid; gap: 10px; max-width: 760px; }
 .price-summary a { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 16px 20px; background: var(--label); border: var(--border-soft); border-radius: var(--radius); text-decoration: none; }
 .price-summary a:hover { border-color: var(--accent); }
-.price-summary span { font-family: 'Poppins', sans-serif; font-weight: 700; color: var(--accent); white-space: nowrap; }
+.price-summary span { font-family: 'Poppins', sans-serif; font-weight: 700; color: var(--accent-text); white-space: nowrap; }
 @media (max-width: 480px) { .price-summary a { flex-direction: column; gap: 2px; } }
 
 /* Home: The Podcast Pivot as a compact showreel card */
