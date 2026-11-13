@@ -30,7 +30,7 @@ Prices are guidelines, not fixed rates.
 
 ## Pages
 
-- [Home](https://mbmspodcaststudio.com/): overview, Great Portland Street Studio, case study, The Podcast Pivot, about the studio, FAQ
+- [Home](https://mbmspodcaststudio.com/): overview, Great Portland Street Studio, case study, The Podcast Pivot, about us, FAQ
 - [Brand strategy and identity](https://mbmspodcaststudio.com/services/brand-strategy/): positioning, messaging, logos and visual identity
 - [Digital and performance marketing](https://mbmspodcaststudio.com/services/digital-marketing/): SEO, content strategy, pay-per-click ads and email
 - [Social media and community building](https://mbmspodcaststudio.com/services/social-media/): organic and paid content for LinkedIn, Instagram, TikTok and more
