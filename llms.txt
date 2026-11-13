@@ -1,8 +1,8 @@
-# MBMS Podcast Studio
+# Meadow Brand Marketing Services (MBMS)
 
 > Podcast and content studio based in Marlow, Buckinghamshire, UK, recording in London studios, on location and remotely. We make podcasts for businesses, then turn every episode into a month of marketing: clips, LinkedIn posts, articles, newsletters and a four-week posting plan.
 
-MBMS Podcast Studio was founded by Damien Bidmead and has a marketing background, with experience across B2B SaaS, cybersecurity, insurance technology, healthcare, retail and the video games industry, both agency-side and in-house. As well as recording and editing, we help clients shape the idea, plan guests and turn each conversation into content that supports their business goals. We record at venues in London including Great Portland Street Studio, bring a RØDE mobile studio to clients' offices and events in Marlow, the Thames Valley, London and beyond, and record remote guests with Riverside.
+MBMS was founded by Damien Bidmead and has a marketing background, with experience across B2B SaaS, cybersecurity, insurance technology, healthcare, retail and the video games industry, both agency-side and in-house. As well as recording and editing, we help clients shape the idea, plan guests and turn each conversation into content that supports their business goals. We record at venues in London including Great Portland Street Studio, bring a RØDE mobile studio to clients' offices and events in Marlow, the Thames Valley, London and beyond, and record remote guests with Riverside.
 
 ## Services and guide prices
 
@@ -28,13 +28,13 @@ Prices are guidelines, not fixed rates.
 
 - [Home](https://mbmspodcaststudio.com/): overview, Great Portland Street Studio, case study, The Podcast Pivot, about the studio, FAQ
 - [Services and prices](https://mbmspodcaststudio.com/services/): recording, Great Portland Street Studio, mobile and remote recording, post-production, marketing, YouTube clips and packages
-- [About](https://mbmspodcaststudio.com/about/): the team behind MBMS Podcast Studio, founded by Damien Bidmead
+- [About](https://mbmspodcaststudio.com/about/): the team behind MBMS, founded by Damien Bidmead
 - [Case studies](https://mbmspodcaststudio.com/case-studies/): our own content engine, The Dokkcast for Udokk, Arco Cyber and Jiu Jitsu Fieldnotes
 - [How it works](https://mbmspodcaststudio.com/how-it-works/): the first chat, five steps from planning to launch, time needed and ways to start
 - [Work with us](https://mbmspodcaststudio.com/work-with-us/): what you get, case studies, packages, the enquiry form and call booking
 - [Blog](https://mbmspodcaststudio.com/blog/): behind the scenes and practical podcasting advice
 - [Case study: The Dokkcast for Udokk](https://mbmspodcaststudio.com/case-studies/the-dokkcast/): an evidence-led health podcast with its own website, artwork and social media
-- [Case study: MBMS Podcast Studio](https://mbmspodcaststudio.com/case-studies/mbms-podcast-studio/): how we built our own podcast, website, brand and lead capture in 17 days
+- [Case study: MBMS](https://mbmspodcaststudio.com/case-studies/mbms-podcast-studio/): how we built our own podcast, website, brand and lead capture in 17 days
 - [Media kit](https://mbmspodcaststudio.com/media-kit/): logos, LinkedIn banners, podcast artwork, brand colours, fonts and company descriptions
 - [Privacy notice](https://mbmspodcaststudio.com/privacy/): what personal information we collect through the website and how we use it
 - [Website terms of use](https://mbmspodcaststudio.com/terms/): terms for using the website, guide prices and call requests
