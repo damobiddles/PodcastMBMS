@@ -1,13 +1,13 @@
 :root {
-  /* Studio Zine palette, light mode: meadow green background, ink text and sunflower yellow,
+  /* Studio Zine palette, light mode: white and stone backgrounds, ink text and sunflower yellow,
      with ink sections for contrast. Every text/background pair meets WCAG AA. */
   color-scheme: light;
-  --bg: #eef3ec;          /* meadow: page background */
-  --bg-alt: #e1eadd;      /* deeper meadow for alternate sections */
-  --label: #fbfdfa;       /* label boxes and cards */
+  --bg: #ffffff;          /* white: page background */
+  --bg-alt: #f3f3f1;      /* stone for alternate sections */
+  --label: #ffffff;       /* label boxes and cards */
   --ink: #17161c;         /* ink: main text and outlines */
   --muted: #5c5866;
-  --line: #cfdcc9;
+  --line: #e4e3df;
   --accent: #ffc93c;      /* sunflower: buttons, highlights */
   --accent-ink: #17161c;  /* text on orange */
   --accent-strong: #ffc93c;
@@ -18,7 +18,7 @@
   --on-dark: #c9c6d1;     /* body text on dark sections */
   --on-dark-muted: #a9a6b2;
   --border: 1.5px solid var(--ink);          /* buttons, logo, label boxes */
-  --border-soft: 1px solid #cfdcc9;          /* cards, panels, images */
+  --border-soft: 1px solid #e4e3df;          /* cards, panels, images */
   --radius: 12px;
   --max: 1120px;
 }
@@ -78,7 +78,7 @@ p, li { text-wrap: pretty; }
 /* Header */
 .site-header {
   position: sticky; top: 0; z-index: 10;
-  background: rgba(238, 243, 236, .94); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, .94); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
 }
 .nav { display: flex; align-items: center; justify-content: space-between; height: 68px; }
