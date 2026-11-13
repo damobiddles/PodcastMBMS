@@ -51,7 +51,7 @@ contactForm?.addEventListener('submit', async (e) => {
   const page = data.get('page') ? `${data.get('page')}: ` : '';
   const call = data.get('call_date') && data.get('call_time') ? `Call request ${callLabel(data.get('call_date'))}, ${data.get('call_time')}: ` : '';
   if (call) data.set('call_date', callLabel(data.get('call_date')));
-  data.set('subject', `${call}${page}Podcast enquiry: ${data.get('interest')} (${data.get('name')})`);
+  data.set('subject', `${call}${page}Enquiry: ${data.get('interest')} (${data.get('name')})`);
   data.delete('redirect');
   button.disabled = true;
   button.textContent = 'Sending…';
