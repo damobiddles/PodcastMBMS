@@ -1,13 +1,13 @@
 :root {
-  /* Studio Zine palette, light mode: paper background, ink text and signal orange,
-     with ink sections for contrast. Values match the media kit. Every text/background pair meets WCAG AA. */
+  /* Studio Zine palette, light mode: meadow green background, ink text and signal orange,
+     with ink sections for contrast. Every text/background pair meets WCAG AA. */
   color-scheme: light;
-  --bg: #f3f0ea;          /* paper */
-  --bg-alt: #e9e4dc;      /* paper (alt) for alternate sections */
-  --label: #f8f6f1;       /* label boxes and cards */
+  --bg: #eef3ec;          /* meadow: page background */
+  --bg-alt: #e1eadd;      /* deeper meadow for alternate sections */
+  --label: #fbfdfa;       /* label boxes and cards */
   --ink: #17161c;         /* ink: main text and outlines */
   --muted: #5c5866;
-  --line: #d6cfc4;
+  --line: #cfdcc9;
   --accent: #ff5a36;      /* signal orange: buttons, highlights */
   --accent-ink: #17161c;  /* text on orange */
   --accent-strong: #ff5a36;
@@ -18,7 +18,7 @@
   --on-dark: #c9c6d1;     /* body text on dark sections */
   --on-dark-muted: #a9a6b2;
   --border: 1.5px solid var(--ink);          /* buttons, logo, label boxes */
-  --border-soft: 1px solid #d6cfc4;          /* cards, panels, images */
+  --border-soft: 1px solid #cfdcc9;          /* cards, panels, images */
   --radius: 12px;
   --max: 1120px;
 }
@@ -78,7 +78,7 @@ p, li { text-wrap: pretty; }
 /* Header */
 .site-header {
   position: sticky; top: 0; z-index: 10;
-  background: rgba(243, 240, 234, .94); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  background: rgba(238, 243, 236, .94); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
 }
 .nav { display: flex; align-items: center; justify-content: space-between; height: 68px; }
@@ -454,7 +454,7 @@ p, li { text-wrap: pretty; }
 
 
 /* ---------- Studio Zine: paper, label boxes and light outlines ---------- */
-body { background: var(--bg) url("images/paper-noise.svg"); }
+body { background: var(--bg); }
 h1, h2 { font-weight: 800; letter-spacing: -0.02em; }
 h3 { font-weight: 700; }
 .section-alt { background-color: var(--bg-alt); }
