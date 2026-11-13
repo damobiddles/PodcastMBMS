@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
   <rect width="800" height="450" fill="#e9e4dc"/>
-  <polygon points="230,250 690,236 460,440" fill="#ff5a36"/>
+  <polygon points="230,250 690,236 460,440" fill="#FFC93C"/>
   <g transform="rotate(-5 400 230)">
     <rect x="340" y="80" width="120" height="190" rx="60" fill="#f8f6f1" stroke="#17161c" stroke-width="7"/>
     <g stroke="#17161c" stroke-width="6" stroke-linecap="round">
@@ -13,8 +13,8 @@
   </g>
   <g transform="rotate(3 640 150)">
     <path d="M540 90 h200 a20 20 0 0 1 20 20 v80 a20 20 0 0 1 -20 20 h-130 l-40 34 v-34 h-30 a20 20 0 0 1 -20 -20 v-80 a20 20 0 0 1 20 -20z" fill="#17161c"/>
-    <circle cx="590" cy="150" r="20" fill="#ff5a36" fill-opacity=".35"/>
-    <circle cx="590" cy="150" r="13" fill="#ff5a36"/>
+    <circle cx="590" cy="150" r="20" fill="#FFC93C" fill-opacity=".35"/>
+    <circle cx="590" cy="150" r="13" fill="#FFC93C"/>
     <text x="680" y="162" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-weight="800" font-size="34" fill="#f8f6f1">REC</text>
   </g>
   <g transform="rotate(-3 160 70)">
