@@ -4,7 +4,11 @@
 
 MBMS was founded by Damien Bidmead and has a marketing background, with experience across B2B SaaS, cybersecurity, insurance technology, healthcare, retail and the video games industry, both agency-side and in-house. As well as recording and editing, we help clients shape the idea, plan guests and turn each conversation into content that supports their business goals. We record at venues in London including Great Portland Street Studio, bring a RØDE mobile studio to clients' offices and events in Marlow, the Thames Valley, London and beyond, and record remote guests with Riverside.
 
-## Services and guide prices
+## Marketing services
+
+MBMS is a boutique marketing team with content at the core: brand strategy and identity; digital and performance marketing (SEO, content strategy, PPC, email); social media and community building; creative and web design; PR and influencer outreach; data and growth analysis. These are priced per project.
+
+## Podcast and content services and guide prices
 
 - Recording session: £250 for up to 90 minutes, including studio preparation, sound check, monitoring and raw audio files
 - Full podcast package (production, podcast website, brand and social assets, social media management and email): tailored
@@ -27,7 +31,13 @@ Prices are guidelines, not fixed rates.
 ## Pages
 
 - [Home](https://mbmspodcaststudio.com/): overview, Great Portland Street Studio, case study, The Podcast Pivot, about the studio, FAQ
-- [Services and prices](https://mbmspodcaststudio.com/services/): recording, Great Portland Street Studio, mobile and remote recording, post-production, marketing, YouTube clips and packages
+- [Brand strategy and identity](https://mbmspodcaststudio.com/services/brand-strategy/): positioning, messaging, logos and visual identity
+- [Digital and performance marketing](https://mbmspodcaststudio.com/services/digital-marketing/): SEO, content strategy, pay-per-click ads and email
+- [Social media and community building](https://mbmspodcaststudio.com/services/social-media/): organic and paid content for LinkedIn, Instagram, TikTok and more
+- [Creative and web design](https://mbmspodcaststudio.com/services/creative-web-design/): websites, landing pages, graphics and campaigns
+- [PR and influencer outreach](https://mbmspodcaststudio.com/services/pr-influencer/): media placements, podcast guest spots and micro-influencers
+- [Data and growth analysis](https://mbmspodcaststudio.com/services/data-growth/): customer journey mapping, competitor reviews and ROI tracking
+- [Services](https://mbmspodcaststudio.com/services/): the six marketing services, plus podcast and content services and prices: recording, Great Portland Street Studio, mobile and remote recording, post-production, marketing, YouTube clips and packages
 - [About](https://mbmspodcaststudio.com/about/): the team behind MBMS, founded by Damien Bidmead
 - [Case studies](https://mbmspodcaststudio.com/case-studies/): our own content engine, The Dokkcast for Udokk, Arco Cyber and Jiu Jitsu Fieldnotes
 - [How it works](https://mbmspodcaststudio.com/how-it-works/): the first chat, five steps from planning to launch, time needed and ways to start
