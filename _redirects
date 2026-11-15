@@ -1,3 +1,8 @@
+# Server code and packages live in the repo but must never be served as pages
+/netlify/*        /404.html  404!
+/node_modules/*   /404.html  404!
+/package.json     /404.html  404!
+/package-lock.json /404.html  404!
 # Old URLs that moved. Netlify reads this file automatically.
 /blog/introducing-the-pod-pivot/  /blog/introducing-the-podcast-pivot/  301
 /blog/introducing-the-pod-pivot   /blog/introducing-the-podcast-pivot/  301

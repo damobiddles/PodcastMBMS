@@ -1,7 +1,12 @@
 # Plain static site: no build step, publish the repository root.
+# Netlify installs package.json dependencies for the functions in netlify/functions.
 [build]
   command = "echo 'No build step'"
   publish = "."
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
 
 # Security headers for every page
 [[headers]]
@@ -22,5 +27,11 @@
 # Unlisted portfolio page (/damien/): keep it out of search results (shared by link only)
 [[headers]]
   for = "/damien/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+# Free marketing check: results pages are personal, keep them out of search
+[[headers]]
+  for = "/marketing-check/your-check/*"
   [headers.values]
     X-Robots-Tag = "noindex, nofollow"
