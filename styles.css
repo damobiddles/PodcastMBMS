@@ -742,3 +742,7 @@ a:focus-visible, button:focus-visible, .btn:focus-visible, input:focus-visible, 
 .post-hero .prose { max-width: 720px; }
 /* Short pages (thank-you) end on the hero: a sunflower rule keeps it apart from the ink footer */
 main > .page-intro:last-child { border-bottom: 4px solid var(--accent); }
+/* Polish */
+.levels.section-alt { padding-bottom: 90px; }
+@media (max-width: 760px) { .levels.section-alt { padding-bottom: 64px; } }
+.footer-brand .brand { display: inline-flex; }
