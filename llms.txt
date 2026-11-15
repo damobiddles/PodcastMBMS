@@ -40,7 +40,8 @@ Prices are guidelines, not fixed rates.
 - [Our approach](https://mbmspodcaststudio.com/approach/): how MBMS works: one conversation, four steps (Listen, Shape, Share, Learn), principles and what to expect
 - [Example plans](https://mbmspodcaststudio.com/illustrative-plans/): illustrative marketing plans (not client work) for a B2B software launch, a local professional services firm and a healthcare brand
 - [Brand health check](https://mbmspodcaststudio.com/brand-health-check/): a free ten-question self-check with a score and suggested next steps; answers are not saved or sent
-- [Services](https://mbmspodcaststudio.com/services/): the six marketing services, plus podcast and content services and prices: recording, Great Portland Street Studio, mobile and remote recording, post-production, marketing, YouTube clips and packages
+- [Services](https://mbmspodcaststudio.com/services/): the six marketing services, with a short summary of podcast and content services
+- [Podcast and content services and prices](https://mbmspodcaststudio.com/services/podcasts/): recording, Great Portland Street Studio, mobile and remote recording, post-production, podcast-to-content marketing, YouTube clips, packages and podcast FAQ
 - [About](https://mbmspodcaststudio.com/about/): the team behind MBMS, founded by Damien Bidmead
 - [Our work](https://mbmspodcaststudio.com/case-studies/): results from our founder's previous roles (labelled as such, not MBMS clients), client work for Udokk (The Dokkcast) and Pearson Building, our content engine (Offcuts and Posting Desk), how we launched MBMS, and illustrative plans clearly labelled as examples
 - [How it works](https://mbmspodcaststudio.com/how-it-works/): the first chat, five steps from planning to launch, time needed and ways to start
