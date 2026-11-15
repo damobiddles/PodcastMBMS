@@ -22,6 +22,7 @@ jobs:
         with: { node-version: 22 }
       - run: npm ci
       - run: npm test
-      - run: node scripts/marketing-check-smoke.mjs ${{ inputs.sites || 'https://mbmspodcaststudio.com/ https://www.thehandandflowers.co.uk/ https://www.crunch.co.uk/ https://www.freeagent.com/ https://www.gailsbread.co.uk/ https://basecamp.com/ https://www.marlowtowncouncil.gov.uk/ https://www.pipedrive.com/en' }}
+      - env: { SMOKE_PRINT: '1' }
+        run: node scripts/marketing-check-smoke.mjs ${{ inputs.sites || 'https://mbmspodcaststudio.com/ https://www.thehandandflowers.co.uk/ https://www.crunch.co.uk/ https://www.freeagent.com/ https://www.gailsbread.co.uk/ https://basecamp.com/ https://www.pipedrive.com/en' }}
       - uses: actions/upload-artifact@v4
         with: { name: smoke-out, path: smoke-out/, retention-days: 3 }

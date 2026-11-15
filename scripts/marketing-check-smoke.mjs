@@ -15,6 +15,8 @@ for (const site of sites) {
     const page = extractPage(html);
     fs.writeFileSync(`smoke-out/${name}.json`, JSON.stringify({ site, finalUrl: url, htmlBytes: html.length, truncated, ms: Date.now() - t, page }, null, 2));
     console.log(`OK   ${site} -> ${url} ${html.length}B ${page.wordCount} words ${Date.now() - t}ms`);
+    // Print what Claude would be given, so the extraction can be reviewed in the job log
+    if (process.env.SMOKE_PRINT) console.log(`::group::${site}\nPAGEJSON ${Buffer.from(JSON.stringify({ finalUrl: url, page })).toString('base64')}\n::endgroup::`);
   } catch (e) {
     fs.writeFileSync(`smoke-out/${name}.json`, JSON.stringify({ site, error: e.code || 'error', message: e.message }));
     console.log(`FAIL ${site}: ${e.code || ''} ${e.message}`);
