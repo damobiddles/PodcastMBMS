@@ -30,6 +30,7 @@ function allowedOrigin(req) {
 export default async (req, context) => {
   if (req.method !== 'POST') return fail(405, 'Method not allowed', 'method');
   if (!allowedOrigin(req)) return fail(403, 'Please use the form on our website.', 'origin');
+  if (!process.env.ANTHROPIC_API_KEY) return fail(503, 'The free check is being switched on and isn’t ready just yet. Please book a free 20-minute call instead, or try again tomorrow.', 'config');
 
   let body;
   try {
