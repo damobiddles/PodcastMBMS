@@ -16,7 +16,9 @@ export function decodeEntities(s) {
   });
 }
 
-const clean = (s) => decodeEntities(String(s || '').replace(/<[^>]*>/g, ' ')).replace(/\s+/g, ' ').trim();
+// Inline tags join words ("savin<span>g</span>"); block tags separate them
+const INLINE = /<\/?(span|b|strong|em|i|u|a|small|sup|sub|mark|abbr|font)\b[^>]*>/gi;
+const clean = (s) => decodeEntities(String(s || '').replace(INLINE, '').replace(/<[^>]*>/g, ' ')).replace(/\s+/g, ' ').trim();
 
 function attr(tag, name) {
   const m = new RegExp(`\\s${name}\\s*=\\s*("([^"]*)"|'([^']*)'|([^\\s>]+))`, 'i').exec(tag);
@@ -67,6 +69,7 @@ export function extractPage(html) {
 
   // Visible text with simple markers for structure
   let t = h
+    .replace(/<\/?(span|b|strong|em|i|u|small|sup|sub|mark|abbr|font)\b[^>]*>/gi, '')
     .replace(/<h([1-6])\b[^>]*>([\s\S]*?)<\/h\1>/gi, (m, n, inner) => `\n\n${'#'.repeat(Number(n))} ${clean(inner)}\n\n`)
     .replace(/<button\b[^>]*>([\s\S]*?)<\/button>/gi, (m, inner) => ` [button: ${clean(inner)}] `)
     .replace(/<li\b[^>]*>/gi, '\n- ')
