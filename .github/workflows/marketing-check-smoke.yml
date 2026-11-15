@@ -1,0 +1,27 @@
+name: Marketing check smoke test
+# Manual (or on changes to the checker): reads a few real homepages with the checker's
+# safe page reader, to catch problems with redirects, compression and odd HTML.
+on:
+  workflow_dispatch:
+    inputs:
+      sites:
+        description: Space-separated homepages to read
+        required: false
+  push:
+    branches: [claude/marketing-check]
+    paths: ['netlify/lib/**', 'scripts/marketing-check-smoke.mjs', '.github/workflows/marketing-check-smoke.yml']
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: npm ci
+      - run: npm test
+      - run: node scripts/marketing-check-smoke.mjs ${{ inputs.sites || 'https://mbmspodcaststudio.com/ https://www.thehandandflowers.co.uk/ https://www.crunch.co.uk/ https://www.freeagent.com/ https://www.gailsbread.co.uk/ https://basecamp.com/ https://www.marlowtowncouncil.gov.uk/ https://www.pipedrive.com/en' }}
+      - uses: actions/upload-artifact@v4
+        with: { name: smoke-out, path: smoke-out/, retention-days: 3 }

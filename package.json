@@ -1,0 +1,14 @@
+{
+  "name": "mbms-site",
+  "private": true,
+  "type": "module",
+  "description": "Static site plus Netlify Functions for the free marketing check.",
+  "scripts": {
+    "test": "node --test netlify/tests/*.test.mjs"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.8.0",
+    "@netlify/blobs": "^11.1.9"
+  }
+}
