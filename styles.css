@@ -24,7 +24,8 @@
 }
 
 /* Ink sections keep the dark-mode values, so cards and buttons inside them still read */
-.section-dark, .site-footer, .post-cta, .package-full, .level-card-accent {
+.section-dark, .site-footer, .post-cta, .package-full, .level-card-accent,
+.hero, .page-intro, .post-hero {
   color-scheme: dark;
   --ink: #f3f0ea;
   --label: #24222b;
@@ -719,3 +720,25 @@ a:focus-visible, button:focus-visible, .btn:focus-visible, input:focus-visible, 
 .service-facts .download-box { display: block; margin: 0; }
 .service-facts .download-box p:not(.eyebrow):not(.wwu-big) { color: var(--ink); }
 @media (max-width: 760px) { .service-facts { grid-template-columns: 1fr; } }
+
+/* Ink heroes: every page opens on ink, with white headings and sunflower accents */
+.hero, .page-intro, .post-hero { background: var(--dark); color: var(--white); }
+.hero h1, .page-intro h1, .post-hero h1 { color: var(--white); }
+.hero .lede, .page-intro .section-intro, .post-hero .post-meta, .page-intro p:not(.eyebrow) { color: var(--on-dark); }
+.hero .btn-ghost, .page-intro .btn-ghost { color: var(--white); border-color: color-mix(in srgb, var(--white) 80%, transparent); }
+.hero .btn:hover, .page-intro .btn:hover { box-shadow: 4px 4px 0 var(--accent-strong); }
+.hero a:focus-visible, .page-intro a:focus-visible, .post-hero a:focus-visible { outline-color: var(--accent); }
+.page-intro, .post-hero { padding-block: 72px 64px; }
+.post-hero + .post { padding-top: 48px; }
+.post-hero h1 { margin-bottom: .3em; }
+.post-hero .post-meta { margin-bottom: 0; }
+.post-hero .back-link { color: var(--accent); }
+.page-intro .jump-links a { background: var(--label); border-color: var(--line); color: var(--ink); }
+.page-intro .jump-links a:hover { border-color: var(--accent); }
+/* Homepage headline: white and sunflower label boxes pop on ink */
+.hero h1 .lbl { background: var(--white); color: var(--dark); border-color: var(--white); }
+.hero h1 .lbl-2 { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+@media (max-width: 760px) { .page-intro, .post-hero { padding-block: 52px 44px; } .post-hero + .post { padding-top: 36px; } }
+.post-hero .prose { max-width: 720px; }
+/* Short pages (thank-you) end on the hero: a sunflower rule keeps it apart from the ink footer */
+main > .page-intro:last-child { border-bottom: 4px solid var(--accent); }
