@@ -1,4 +1,4 @@
-// GET /api/marketing-check/opt-out?id=...&t=...
+// GET /api/podcast-check/opt-out?id=...&t=...  (old marketing check emails use /api/marketing-check/opt-out)
 // The "Delete my details" link in every check email. Deletes the stored lead, stops future
 // checks to that address, and tells MBMS so the alert email can be deleted too.
 
@@ -19,7 +19,7 @@ export default async (req) => {
   // Mail clients and scanners sometimes open links automatically, so deleting needs a button press
   if (req.method === 'GET') {
     return new Response(`<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Delete my details | MBMS</title><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/styles-firm.css"></head>
-<body><main id="main"><section class="section page-intro"><div class="container"><p class="eyebrow">Your details</p><h1>Delete my details</h1><p class="section-intro">This deletes your marketing check and contact details from our records and stops any more emails about it.</p>
+<body><main id="main"><section class="section page-intro"><div class="container"><p class="eyebrow">Your details</p><h1>Delete my details</h1><p class="section-intro">This deletes your check and contact details from our records and stops any more emails about it.</p>
 <form method="POST" class="hero-actions" style="justify-content:flex-start"><button class="btn" type="submit">Delete my details</button></form></div></section></main></body></html>`,
       { status: 200, headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex' } });
   }
@@ -32,7 +32,7 @@ export default async (req) => {
       html: `<p>${esc(lead.email)} (${esc(lead.business)}, ${esc(lead.url)}) asked to delete their details.</p><p>Their stored check has been deleted and the tool won’t email them again. Please delete the original lead alert email and don’t contact them about the check.</p>`,
     });
   }
-  return page('Your details are deleted', 'We’ve deleted your marketing check and contact details, and we won’t email you about it again.');
+  return page('Your details are deleted', 'We’ve deleted your check and contact details, and we won’t email you about it again.');
 };
 
-export const config = { path: '/api/marketing-check/opt-out', method: ['GET', 'POST'] };
+export const config = { path: ['/api/podcast-check/opt-out', '/api/marketing-check/opt-out'], method: ['GET', 'POST'] };

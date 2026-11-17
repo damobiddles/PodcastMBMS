@@ -1,4 +1,4 @@
-/* Free marketing check: form page and results page */
+/* Free podcast check: form page and results page */
 .mc-form[hidden], .mc-form [hidden], .mc-progress[hidden], .mc-report[hidden] { display: none !important; }
 .mc-points { list-style: none; padding: 0; margin: -1.2em 0 0; display: flex; flex-wrap: wrap; gap: 8px 10px; }
 .mc-points li { font-size: .9rem; font-weight: 600; padding: .35em .85em; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); }

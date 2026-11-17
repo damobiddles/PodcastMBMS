@@ -1,4 +1,4 @@
-// Calls Claude to write the marketing check. The API key stays on the server
+// Calls Claude to write the podcast check. The API key stays on the server
 // (ANTHROPIC_API_KEY in Netlify's environment variables) and is never sent to the browser.
 
 import Anthropic from '@anthropic-ai/sdk';
@@ -23,14 +23,16 @@ function getClient() {
 /** Validates and tidies Claude's JSON so the page and email can trust its shape. */
 export function normaliseAudit(raw) {
   const s = (v, max = 1200) => String(v ?? '').replace(/\s+/g, ' ').trim().slice(0, max);
-  const oc = (o) => ({ observed: s(o?.observed, 600), comment: s(o?.comment, 900) });
+  const oc = (o) => ({ observed: s(o?.observed, 700), comment: s(o?.comment, 900) });
   const wins = Array.isArray(raw?.quick_wins) ? raw.quick_wins.slice(0, 3).map((w) => ({ title: s(w?.title, 120), detail: s(w?.detail, 700) })) : [];
-  const service = SERVICES[raw?.bigger_opportunity?.service] ? raw.bigger_opportunity.service : 'brand-strategy';
+  const service = SERVICES[raw?.bigger_opportunity?.service] ? raw.bigger_opportunity.service : 'plan-coach';
   const audit = {
-    page_quality: raw?.page_quality === 'thin' ? 'thin' : 'ok',
+    data_quality: raw?.data_quality === 'thin' ? 'thin' : 'ok',
     summary: s(raw?.summary, 600),
-    positioning: { verdict: s(raw?.positioning?.verdict, 300), detail: s(raw?.positioning?.detail, 900) },
-    messaging: { headline: oc(raw?.messaging?.headline), proof: oc(raw?.messaging?.proof), ctas: oc(raw?.messaging?.ctas) },
+    show: { verdict: s(raw?.show?.verdict, 300), detail: s(raw?.show?.detail, 900) },
+    titles: oc(raw?.titles),
+    descriptions: oc(raw?.descriptions),
+    rhythm: oc(raw?.rhythm),
     quick_wins: wins,
     bigger_opportunity: { service, title: s(raw?.bigger_opportunity?.title, 120), detail: s(raw?.bigger_opportunity?.detail, 900) },
   };
@@ -39,7 +41,7 @@ export function normaliseAudit(raw) {
 }
 
 /** Runs one check. Returns { audit, usage, model }. */
-export async function runAudit({ business, sells, goal, goalOther, page, finalUrl }) {
+export async function runAudit({ goal, goalOther, audience, show, finalUrl }) {
   const anthropic = getClient();
   let response;
   try {
@@ -51,7 +53,7 @@ export async function runAudit({ business, sells, goal, goalOther, page, finalUr
       fallbacks: 'default',
       output_config: { effort: 'medium', format: { type: 'json_schema', schema: OUTPUT_SCHEMA } },
       system: [{ type: 'text', text: SYSTEM_PROMPT, cache_control: { type: 'ephemeral' } }],
-      messages: [{ role: 'user', content: buildUserMessage({ business, sells, goal, goalOther, page, finalUrl }) }],
+      messages: [{ role: 'user', content: buildUserMessage({ goal, goalOther, audience, show, finalUrl }) }],
     });
   } catch (e) {
     if (e instanceof Anthropic.RateLimitError) throw new AuditError('busy', 'Rate limited');
