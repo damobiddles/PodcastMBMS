@@ -1,4 +1,4 @@
-# Meadow Brand Marketing Services (MBMS) website
+# MBMS Podcast Studio website
 
 A static, single-page website for podcast recording, production and marketing services.
 
