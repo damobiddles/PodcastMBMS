@@ -1,0 +1,28 @@
+name: Podcast check smoke test
+# Manual (or on changes to the checker): reads a few real shows with the checker's
+# safe show reader, to catch problems with feeds, Apple lookups and YouTube channels.
+on:
+  workflow_dispatch:
+    inputs:
+      links:
+        description: Space-separated show links (Apple Podcasts, RSS feed or YouTube channel)
+        required: false
+  push:
+    branches: [claude/podcast-check]
+    paths: ['netlify/lib/**', 'scripts/podcast-check-smoke.mjs', '.github/workflows/podcast-check-smoke.yml']
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: npm ci
+      - run: npm test
+      - env: { SMOKE_PRINT: '1' }
+        run: node scripts/podcast-check-smoke.mjs ${{ inputs.links || 'https://podcasts.apple.com/us/podcast/the-pod-pivot/id6817449302 https://podcasts.apple.com/gb/podcast/the-diary-of-a-ceo-with-steven-bartlett/id1291423644 https://podcasts.files.bbci.co.uk/p02nq0gn.xml https://www.youtube.com/@TheDiaryOfACEO https://open.spotify.com/show/57sq8LLsrorHbcUvYFdcgx' }}
+      - uses: actions/upload-artifact@v4
+        with: { name: smoke-out, path: smoke-out/, retention-days: 3 }
