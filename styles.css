@@ -748,3 +748,12 @@ main > .page-intro:last-child { border-bottom: 4px solid var(--accent); }
 .levels.section-alt { padding-bottom: 90px; }
 @media (max-width: 760px) { .levels.section-alt { padding-bottom: 64px; } }
 .footer-brand .brand { display: inline-flex; }
+
+/* Hero sound wave (podcast refocus, Nov 2026) */
+.waveform { display: flex; align-items: center; justify-content: center; gap: 6px; height: 80px; margin-top: 48px; position: relative; z-index: 1; }
+.waveform span { width: 6px; border-radius: 3px; background: var(--accent); opacity: .9; animation: wave 1.4s ease-in-out infinite; }
+.waveform span:nth-child(3n) { animation-delay: -.3s; background: var(--white); opacity: .75; }
+.waveform span:nth-child(3n+1) { animation-delay: -.7s; }
+.waveform span:nth-child(4n) { animation-delay: -1.1s; }
+@keyframes wave { 0%, 100% { height: 14px; } 50% { height: 72px; } }
+@media (prefers-reduced-motion: reduce) { .waveform span { animation: none; height: 40px; } }
