@@ -30,8 +30,8 @@
   [headers.values]
     X-Robots-Tag = "noindex, nofollow"
 
-# Free marketing check: results pages are personal, keep them out of search
+# Free podcast check: results pages are personal, keep them out of search
 [[headers]]
-  for = "/marketing-check/your-check/*"
+  for = "/podcast-check/your-check/*"
   [headers.values]
     X-Robots-Tag = "noindex, nofollow"

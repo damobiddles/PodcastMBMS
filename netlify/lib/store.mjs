@@ -3,6 +3,7 @@
 import { getStore } from '@netlify/blobs';
 import crypto from 'node:crypto';
 
+// Store names kept from the original marketing check so earlier leads stay in one list
 const leads = () => getStore({ name: 'marketing-check-leads', consistency: 'strong' });
 const limits = () => getStore({ name: 'marketing-check-limits', consistency: 'strong' });
 

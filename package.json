@@ -2,7 +2,7 @@
   "name": "mbms-site",
   "private": true,
   "type": "module",
-  "description": "Static site plus Netlify Functions for the free marketing check.",
+  "description": "Static site plus Netlify Functions for the free podcast check.",
   "scripts": {
     "test": "node --test netlify/tests/*.test.mjs"
   },

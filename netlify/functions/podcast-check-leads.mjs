@@ -1,5 +1,5 @@
-// GET /api/marketing-check/leads.csv  (password protected)
-// Downloads every stored marketing check lead as a spreadsheet-friendly CSV.
+// GET /api/podcast-check/leads.csv  (password protected)
+// Downloads every stored check lead (podcast checks, plus older marketing checks) as a spreadsheet-friendly CSV.
 // Sign in with any username and the password in CHECK_LEADS_PASSWORD.
 
 import crypto from 'node:crypto';
@@ -18,14 +18,14 @@ export default async (req) => {
   if (!crypto.timingSafeEqual(a, b)) return deny();
 
   const rows = await listLeads();
-  const header = ['date', 'business', 'email', 'website', 'what they sell', 'goal', 'happy to hear from us', 'bigger opportunity', 'service', 'summary', 'cost usd', 'site'];
+  const header = ['date', 'tool', 'show or business', 'email', 'link', 'who the show is for', 'goal', 'happy to hear from us', 'bigger opportunity', 'service', 'summary', 'cost usd', 'site'];
   const lines = [header.join(',')].concat(rows.map((l) => [
-    l.createdAt, l.business, l.email, l.url, l.sells, l.goal === 'other' && l.goalOther ? `Other: ${l.goalOther}` : GOALS[l.goal],
-    l.followUp ? 'yes' : 'no', l.audit?.bigger_opportunity?.title, SERVICES[l.audit?.bigger_opportunity?.service]?.name, l.audit?.summary, l.costUsd, l.deploy,
+    l.createdAt, l.tool || 'marketing-check', l.business, l.email, l.url, l.audience || l.sells, l.goal === 'other' && l.goalOther ? `Other: ${l.goalOther}` : (GOALS[l.goal] || l.goal),
+    l.followUp ? 'yes' : 'no', l.audit?.bigger_opportunity?.title, SERVICES[l.audit?.bigger_opportunity?.service]?.name || l.audit?.bigger_opportunity?.service, l.audit?.summary, l.costUsd, l.deploy,
   ].map(csv).join(',')));
   return new Response('﻿' + lines.join('\r\n'), {
-    headers: { 'Content-Type': 'text/csv; charset=utf-8', 'Content-Disposition': `attachment; filename="marketing-check-leads-${new Date().toISOString().slice(0, 10)}.csv"`, 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex' },
+    headers: { 'Content-Type': 'text/csv; charset=utf-8', 'Content-Disposition': `attachment; filename="podcast-check-leads-${new Date().toISOString().slice(0, 10)}.csv"`, 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex' },
   });
 };
 
-export const config = { path: '/api/marketing-check/leads.csv', method: ['GET'] };
+export const config = { path: ['/api/podcast-check/leads.csv', '/api/marketing-check/leads.csv'], method: ['GET'] };
